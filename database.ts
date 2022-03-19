@@ -5,6 +5,7 @@ const sequelize = new Sequelize('zeroblog', 'zeroblog', 'RUORLKZCDW5I287b', {
   dialect: 'mysql'
 });
 export class User extends Model {};
+export class Post extends Model {};
 User.init({
   id: { type: DataTypes.STRING, allowNull: false, primaryKey: true },
   username: { type: DataTypes.STRING, allowNull: false },
@@ -12,6 +13,13 @@ User.init({
   email: { type: DataTypes.STRING, allowNull: false },
   admin: { type: DataTypes.BOOLEAN, allowNull: false },
 }, { sequelize, modelName: 'Users' });
+Post.init({
+  id: { type: DataTypes.STRING, allowNull: false, primaryKey: true },
+  author: { type: DataTypes.STRING, allowNull: false },
+  title: { type: DataTypes.STRING, allowNull: false },
+  subtitle: { type: DataTypes.STRING, allowNull: true },
+  content: { type: DataTypes.STRING, allowNull: false }
+}, { sequelize, modelName: 'Posts' });
 export async function dispatch() {
   try {
     await sequelize.authenticate();

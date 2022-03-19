@@ -1,11 +1,8 @@
 import { 
-  Container,
   Center,
   Text,
   Box,
-  Image
 } from '@chakra-ui/react'
-import { Flex, Spacer } from '@chakra-ui/react'
 
 export default function PageTitle({ title }) {
   return (

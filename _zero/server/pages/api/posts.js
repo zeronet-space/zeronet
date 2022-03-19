@@ -1,29 +1,45 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 223;
-exports.ids = [223];
+exports.id = "pages/api/posts";
+exports.ids = ["pages/api/posts"];
 exports.modules = {
 
-/***/ 545:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "@sequelize/core":
+/*!**********************************!*\
+  !*** external "@sequelize/core" ***!
+  \**********************************/
+/***/ ((module) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ postsRoute)
-/* harmony export */ });
-async function postsRoute(req, res) {
-    /*const admin = await User.create({
-    id: '66-6-6-6-666'.replace(/6/g,_=>(Math.random().toString(16)+'00000').slice(2,6)),
-    username: 'ay0ks',
-    password: '$2a$12$5viYeccNg4yhP8Z6hBh7buXU4UALhDAXHNPwy4lQAVaLrlXs7xa.y',
-    email: 'contact@zeronet.space',
-    admin: true
-  });*/ res.send({
-        message: 'системы постов пока-что не будет (зато есть админка без логина), подождите апдейт'
-    });
-};
+module.exports = import("@sequelize/core");;
 
+/***/ }),
+
+/***/ "(api)/./database.ts":
+/*!*********************!*\
+  !*** ./database.ts ***!
+  \*********************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"User\": () => (/* binding */ User),\n/* harmony export */   \"Post\": () => (/* binding */ Post),\n/* harmony export */   \"dispatch\": () => (/* binding */ dispatch)\n/* harmony export */ });\n/* harmony import */ var _sequelize_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sequelize/core */ \"@sequelize/core\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_sequelize_core__WEBPACK_IMPORTED_MODULE_0__]);\n_sequelize_core__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\nconst sequelize = new _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.Sequelize('zeroblog', 'zeroblog', 'RUORLKZCDW5I287b', {\n    host: 'localhost',\n    dialect: 'mysql'\n});\nclass User extends _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.Model {\n}\nclass Post extends _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.Model {\n}\nUser.init({\n    id: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false,\n        primaryKey: true\n    },\n    username: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    },\n    password: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    },\n    email: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    },\n    admin: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.BOOLEAN,\n        allowNull: false\n    }\n}, {\n    sequelize,\n    modelName: 'Users'\n});\nPost.init({\n    id: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false,\n        primaryKey: true\n    },\n    author: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    },\n    title: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    },\n    subtitle: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: true\n    },\n    content: {\n        type: _sequelize_core__WEBPACK_IMPORTED_MODULE_0__.DataTypes.STRING,\n        allowNull: false\n    }\n}, {\n    sequelize,\n    modelName: 'Posts'\n});\nasync function dispatch() {\n    try {\n        await sequelize.authenticate();\n        await sequelize.sync({\n            force: true\n        });\n        console.log('Connection has been established successfully.');\n    } catch (error) {\n        console.error('Unable to connect to the database:', error);\n    }\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9kYXRhYmFzZS50cy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQTZEO0FBRTdELEtBQUssQ0FBQ0csU0FBUyxHQUFHLEdBQUcsQ0FBQ0gsc0RBQVMsQ0FBQyxDQUFVLFdBQUUsQ0FBVSxXQUFFLENBQWtCLG1CQUFFLENBQUM7SUFDM0VJLElBQUksRUFBRSxDQUFXO0lBQ2pCQyxPQUFPLEVBQUUsQ0FBTztBQUNsQixDQUFDO0FBQ00sTUFBTUMsSUFBSSxTQUFTSixrREFBSzs7QUFDeEIsTUFBTUssSUFBSSxTQUFTTCxrREFBSzs7QUFDL0JJLElBQUksQ0FBQ0UsSUFBSSxDQUFDLENBQUM7SUFDVEMsRUFBRSxFQUFFLENBQUM7UUFBQ0MsSUFBSSxFQUFFVCw2REFBZ0I7UUFBRVcsU0FBUyxFQUFFLEtBQUs7UUFBRUMsVUFBVSxFQUFFLElBQUk7SUFBQyxDQUFDO0lBQ2xFQyxRQUFRLEVBQUUsQ0FBQztRQUFDSixJQUFJLEVBQUVULDZEQUFnQjtRQUFFVyxTQUFTLEVBQUUsS0FBSztJQUFDLENBQUM7SUFDdERHLFFBQVEsRUFBRSxDQUFDO1FBQUNMLElBQUksRUFBRVQsNkRBQWdCO1FBQUVXLFNBQVMsRUFBRSxLQUFLO0lBQUMsQ0FBQztJQUN0REksS0FBSyxFQUFFLENBQUM7UUFBQ04sSUFBSSxFQUFFVCw2REFBZ0I7UUFBRVcsU0FBUyxFQUFFLEtBQUs7SUFBQyxDQUFDO0lBQ25ESyxLQUFLLEVBQUUsQ0FBQztRQUFDUCxJQUFJLEVBQUVULDhEQUFpQjtRQUFFVyxTQUFTLEVBQUUsS0FBSztJQUFDLENBQUM7QUFDdEQsQ0FBQyxFQUFFLENBQUM7SUFBQ1QsU0FBUztJQUFFZ0IsU0FBUyxFQUFFLENBQU87QUFBQyxDQUFDO0FBQ3BDWixJQUFJLENBQUNDLElBQUksQ0FBQyxDQUFDO0lBQ1RDLEVBQUUsRUFBRSxDQUFDO1FBQUNDLElBQUksRUFBRVQsNkRBQWdCO1FBQUVXLFNBQVMsRUFBRSxLQUFLO1FBQUVDLFVBQVUsRUFBRSxJQUFJO0lBQUMsQ0FBQztJQUNsRU8sTUFBTSxFQUFFLENBQUM7UUFBQ1YsSUFBSSxFQUFFVCw2REFBZ0I7UUFBRVcsU0FBUyxFQUFFLEtBQUs7SUFBQyxDQUFDO0lBQ3BEUyxLQUFLLEVBQUUsQ0FBQztRQUFDWCxJQUFJLEVBQUVULDZEQUFnQjtRQUFFVyxTQUFTLEVBQUUsS0FBSztJQUFDLENBQUM7SUFDbkRVLFFBQVEsRUFBRSxDQUFDO1FBQUNaLElBQUksRUFBRVQsNkRBQWdCO1FBQUVXLFNBQVMsRUFBRSxJQUFJO0lBQUMsQ0FBQztJQUNyRFcsT0FBTyxFQUFFLENBQUM7UUFBQ2IsSUFBSSxFQUFFVCw2REFBZ0I7UUFBRVcsU0FBUyxFQUFFLEtBQUs7SUFBQyxDQUFDO0FBQ3ZELENBQUMsRUFBRSxDQUFDO0lBQUNULFNBQVM7SUFBRWdCLFNBQVMsRUFBRSxDQUFPO0FBQUMsQ0FBQztBQUM3QixlQUFlSyxRQUFRLEdBQUcsQ0FBQztJQUNoQyxHQUFHLENBQUMsQ0FBQztRQUNILEtBQUssQ0FBQ3JCLFNBQVMsQ0FBQ3NCLFlBQVk7UUFDNUIsS0FBSyxDQUFDdEIsU0FBUyxDQUFDdUIsSUFBSSxDQUFDLENBQUM7WUFBQ0MsS0FBSyxFQUFFLElBQUk7UUFBQyxDQUFDO1FBQ3BDQyxPQUFPLENBQUNDLEdBQUcsQ0FBQyxDQUErQztJQUM3RCxDQUFDLENBQUMsS0FBSyxFQUFFQyxLQUFLLEVBQUUsQ0FBQztRQUNmRixPQUFPLENBQUNFLEtBQUssQ0FBQyxDQUFvQyxxQ0FBRUEsS0FBSztJQUMzRCxDQUFDO0FBQ0gsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3plcm9uZXQvLi9kYXRhYmFzZS50cz8wYzZkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNlcXVlbGl6ZSwgRGF0YVR5cGVzLCBNb2RlbCB9IGZyb20gJ0BzZXF1ZWxpemUvY29yZSdcblxuY29uc3Qgc2VxdWVsaXplID0gbmV3IFNlcXVlbGl6ZSgnemVyb2Jsb2cnLCAnemVyb2Jsb2cnLCAnUlVPUkxLWkNEVzVJMjg3YicsIHtcbiAgaG9zdDogJ2xvY2FsaG9zdCcsXG4gIGRpYWxlY3Q6ICdteXNxbCdcbn0pO1xuZXhwb3J0IGNsYXNzIFVzZXIgZXh0ZW5kcyBNb2RlbCB7fTtcbmV4cG9ydCBjbGFzcyBQb3N0IGV4dGVuZHMgTW9kZWwge307XG5Vc2VyLmluaXQoe1xuICBpZDogeyB0eXBlOiBEYXRhVHlwZXMuU1RSSU5HLCBhbGxvd051bGw6IGZhbHNlLCBwcmltYXJ5S2V5OiB0cnVlIH0sXG4gIHVzZXJuYW1lOiB7IHR5cGU6IERhdGFUeXBlcy5TVFJJTkcsIGFsbG93TnVsbDogZmFsc2UgfSxcbiAgcGFzc3dvcmQ6IHsgdHlwZTogRGF0YVR5cGVzLlNUUklORywgYWxsb3dOdWxsOiBmYWxzZSB9LFxuICBlbWFpbDogeyB0eXBlOiBEYXRhVHlwZXMuU1RSSU5HLCBhbGxvd051bGw6IGZhbHNlIH0sXG4gIGFkbWluOiB7IHR5cGU6IERhdGFUeXBlcy5CT09MRUFOLCBhbGxvd051bGw6IGZhbHNlIH0sXG59LCB7IHNlcXVlbGl6ZSwgbW9kZWxOYW1lOiAnVXNlcnMnIH0pO1xuUG9zdC5pbml0KHtcbiAgaWQ6IHsgdHlwZTogRGF0YVR5cGVzLlNUUklORywgYWxsb3dOdWxsOiBmYWxzZSwgcHJpbWFyeUtleTogdHJ1ZSB9LFxuICBhdXRob3I6IHsgdHlwZTogRGF0YVR5cGVzLlNUUklORywgYWxsb3dOdWxsOiBmYWxzZSB9LFxuICB0aXRsZTogeyB0eXBlOiBEYXRhVHlwZXMuU1RSSU5HLCBhbGxvd051bGw6IGZhbHNlIH0sXG4gIHN1YnRpdGxlOiB7IHR5cGU6IERhdGFUeXBlcy5TVFJJTkcsIGFsbG93TnVsbDogdHJ1ZSB9LFxuICBjb250ZW50OiB7IHR5cGU6IERhdGFUeXBlcy5TVFJJTkcsIGFsbG93TnVsbDogZmFsc2UgfVxufSwgeyBzZXF1ZWxpemUsIG1vZGVsTmFtZTogJ1Bvc3RzJyB9KTtcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkaXNwYXRjaCgpIHtcbiAgdHJ5IHtcbiAgICBhd2FpdCBzZXF1ZWxpemUuYXV0aGVudGljYXRlKCk7XG4gICAgYXdhaXQgc2VxdWVsaXplLnN5bmMoeyBmb3JjZTogdHJ1ZSB9KTtcbiAgICBjb25zb2xlLmxvZygnQ29ubmVjdGlvbiBoYXMgYmVlbiBlc3RhYmxpc2hlZCBzdWNjZXNzZnVsbHkuJyk7XG4gIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgY29uc29sZS5lcnJvcignVW5hYmxlIHRvIGNvbm5lY3QgdG8gdGhlIGRhdGFiYXNlOicsIGVycm9yKTtcbiAgfSBcbn0iXSwibmFtZXMiOlsiU2VxdWVsaXplIiwiRGF0YVR5cGVzIiwiTW9kZWwiLCJzZXF1ZWxpemUiLCJob3N0IiwiZGlhbGVjdCIsIlVzZXIiLCJQb3N0IiwiaW5pdCIsImlkIiwidHlwZSIsIlNUUklORyIsImFsbG93TnVsbCIsInByaW1hcnlLZXkiLCJ1c2VybmFtZSIsInBhc3N3b3JkIiwiZW1haWwiLCJhZG1pbiIsIkJPT0xFQU4iLCJtb2RlbE5hbWUiLCJhdXRob3IiLCJ0aXRsZSIsInN1YnRpdGxlIiwiY29udGVudCIsImRpc3BhdGNoIiwiYXV0aGVudGljYXRlIiwic3luYyIsImZvcmNlIiwiY29uc29sZSIsImxvZyIsImVycm9yIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./database.ts\n");
+
+/***/ }),
+
+/***/ "(api)/./pages/api/posts.ts":
+/*!****************************!*\
+  !*** ./pages/api/posts.ts ***!
+  \****************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ postsRoute)\n/* harmony export */ });\n/* harmony import */ var _database__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../database */ \"(api)/./database.ts\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_database__WEBPACK_IMPORTED_MODULE_0__]);\n_database__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\nasync function postsRoute(req, res) {\n    /*const admin = await User.create({\n    id: '66-6-6-6-666'.replace(/6/g,_=>(Math.random().toString(16)+'00000').slice(2,6)),\n    username: 'ay0ks',\n    password: '$2a$12$5viYeccNg4yhP8Z6hBh7buXU4UALhDAXHNPwy4lQAVaLrlXs7xa.y',\n    email: 'contact@zeronet.space',\n    admin: true\n  });*/ let posts = await _database__WEBPACK_IMPORTED_MODULE_0__.Post.findAll();\n    res.send(posts);\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvcG9zdHMudHMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBcUM7QUFFdEIsZUFBZUMsVUFBVSxDQUFDQyxHQUFHLEVBQUVDLEdBQUcsRUFBRSxDQUFDO0lBQ2xELEVBTUs7Ozs7OztLQUFBLEdBQ0wsR0FBRyxDQUFDQyxLQUFLLEdBQUcsS0FBSyxDQUFDSixtREFBWTtJQUM5QkcsR0FBRyxDQUFDRyxJQUFJLENBQUNGLEtBQUs7QUFDaEIsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3plcm9uZXQvLi9wYWdlcy9hcGkvcG9zdHMudHM/ZGRiZSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQb3N0IH0gZnJvbSAnLi4vLi4vZGF0YWJhc2UnXG5cbmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIHBvc3RzUm91dGUocmVxLCByZXMpIHtcbiAgLypjb25zdCBhZG1pbiA9IGF3YWl0IFVzZXIuY3JlYXRlKHtcbiAgICBpZDogJzY2LTYtNi02LTY2NicucmVwbGFjZSgvNi9nLF89PihNYXRoLnJhbmRvbSgpLnRvU3RyaW5nKDE2KSsnMDAwMDAnKS5zbGljZSgyLDYpKSxcbiAgICB1c2VybmFtZTogJ2F5MGtzJyxcbiAgICBwYXNzd29yZDogJyQyYSQxMiQ1dmlZZWNjTmc0eWhQOFo2aEJoN2J1WFU0VUFMaERBWEhOUHd5NGxRQVZhTHJsWHM3eGEueScsXG4gICAgZW1haWw6ICdjb250YWN0QHplcm9uZXQuc3BhY2UnLFxuICAgIGFkbWluOiB0cnVlXG4gIH0pOyovXG4gIGxldCBwb3N0cyA9IGF3YWl0IFBvc3QuZmluZEFsbCgpO1xuICByZXMuc2VuZChwb3N0cyk7XG59XG5cbiJdLCJuYW1lcyI6WyJQb3N0IiwicG9zdHNSb3V0ZSIsInJlcSIsInJlcyIsInBvc3RzIiwiZmluZEFsbCIsInNlbmQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./pages/api/posts.ts\n");
 
 /***/ })
 
@@ -34,7 +50,7 @@ async function postsRoute(req, res) {
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(545));
+var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/posts.ts"));
 module.exports = __webpack_exports__;
 
 })();

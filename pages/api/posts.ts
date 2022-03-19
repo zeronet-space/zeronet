@@ -1,5 +1,4 @@
-import { dispatch, User } from '../../database'
-import { nanoid } from 'nanoid'
+import { Post } from '../../database'
 
 export default async function postsRoute(req, res) {
   /*const admin = await User.create({
@@ -9,6 +8,7 @@ export default async function postsRoute(req, res) {
     email: 'contact@zeronet.space',
     admin: true
   });*/
-  res.send({ message: 'системы постов пока-что не будет (зато есть админка без логина), подождите апдейт' });
+  let posts = await Post.findAll();
+  res.send(posts);
 }
 

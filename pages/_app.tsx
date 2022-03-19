@@ -147,6 +147,10 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
 
   return <>
     <Head>
+      <meta 
+        property="og:image" 
+        content="/android-chrome-48x48.png" 
+      />
       <link 
         rel="apple-touch-icon" 
         sizes="180x180"
@@ -174,44 +178,12 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
         color="#5bbad5" 
       />
       <meta 
-        property="og:title" 
-        content="zerønet" 
-      />
-      <meta 
-        property="og:description" 
-        content="Ø" 
-      />
-      <meta 
-        property="og:url" 
-        content="https://zeronet.space" 
-      />
-      <meta 
-        property="og:image" 
-        content="/android-chrome-48x48.png" 
-      />
-      <meta 
         property="twitter:card" 
         content="summary" 
       />
       <meta 
-        property="twitter:title" 
-        content="zerønet" 
-      />
-      <meta 
-        property="twitter:url" 
-        content="https://zeronet.space" 
-      />
-      <meta 
         property="twitter:image" 
         content="/android-chrome-48x48.png" 
-      />
-      <meta 
-        name="apple-mobile-web-app-title" 
-        content="zerønet" 
-      />  
-      <meta 
-        name="application-name" 
-        content="zerønet" 
       />
       <meta 
         name="msapplication-TileColor" 

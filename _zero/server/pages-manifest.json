@@ -1,11 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/admin": "pages/admin.html",
-  "/admin/login": "pages/admin/login.html",
-  "/api/hello": "pages/api/hello.js",
-  "/api/posts": "pages/api/posts.js",
-  "/": "pages/index.js",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/api/posts": "pages/api/posts.js"
 }

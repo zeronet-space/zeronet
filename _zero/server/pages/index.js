@@ -1,104 +1,95 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 405;
-exports.ids = [405];
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
 exports.modules = {
 
-/***/ 75:
+/***/ "./components/PostLink.tsx":
+/*!*********************************!*\
+  !*** ./components/PostLink.tsx ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Home),
-/* harmony export */   "getServerSideProps": () => (/* binding */ getServerSideProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(930);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _zeronet_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(610);
-
-
-
-function Home({ posts  }) {
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, {
-        maxW: "container.xl",
-        colorScheme: _zeronet_theme__WEBPACK_IMPORTED_MODULE_2__/* ["default"].colors.black */ .Z.colors.black,
-        children: [
-            "Тут что-то будет...",
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-            posts
-        ]
-    }));
-};
-async function getServerSideProps() {
-    const res = await fetch('https://zeronet.space/api/posts');
-    const posts = await res.text();
-    return {
-        props: {
-            posts
-        }
-    };
-}
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Post({ id , author , title , subtitle , createdAt  }) {\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n        w: \"100%\",\n        bgColor: \"#939393\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                w: \"100%\",\n                bgColor: \"#696969\",\n                p: \"1\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                        fontSize: \"md\",\n                        children: [\n                            \"(\",\n                            author,\n                            \")\",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Link, {\n                                href: `/post/${id}`,\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                    decoration: \"underline\",\n                                    display: \"inline\",\n                                    children: title\n                                }, void 0, false, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                                    lineNumber: 13,\n                                    columnNumber: 13\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                                lineNumber: 12,\n                                columnNumber: 11\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                        lineNumber: 11,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                        w: \"100%\",\n                        bgColor: \"#797979\",\n                        p: \"1\",\n                        h: \"20px\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                            mt: \"-3px\",\n                            children: subtitle\n                        }, void 0, false, {\n                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                            lineNumber: 17,\n                            columnNumber: 11\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                        lineNumber: 16,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                lineNumber: 10,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                w: \"100%\",\n                bgColor: \"#797979\",\n                p: \"1\",\n                h: \"20px\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                    mt: \"-3px\",\n                    children: [\n                        \"Статья опубликована \",\n                        createdAt\n                    ]\n                }, void 0, true, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                    lineNumber: 22,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n                lineNumber: 21,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/PostLink.tsx\",\n        lineNumber: 9,\n        columnNumber: 5\n    }, this));\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1Bvc3RMaW5rLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFJeUI7QUFFVixRQUFRLENBQUNHLElBQUksQ0FBQyxDQUFDLENBQUNDLEVBQUUsR0FBRUMsTUFBTSxHQUFFQyxLQUFLLEdBQUVDLFFBQVEsR0FBRUMsU0FBUyxFQUFDLENBQUMsRUFBRSxDQUFDO0lBQ3hFLE1BQU0sNkVBQ0hQLGlEQUFHO1FBQUNRLENBQUMsRUFBQyxDQUFNO1FBQUNDLE9BQU8sRUFBQyxDQUFTOzt3RkFDNUJULGlEQUFHO2dCQUFDUSxDQUFDLEVBQUMsQ0FBTTtnQkFBQ0MsT0FBTyxFQUFDLENBQVM7Z0JBQUNDLENBQUMsRUFBQyxDQUFHOztnR0FDbENYLGtEQUFJO3dCQUFDWSxRQUFRLEVBQUMsQ0FBSTs7NEJBQUMsQ0FBQzs0QkFBQ1AsTUFBTTs0QkFBQyxDQUMzQjt3R0FBQ0gsa0RBQUk7Z0NBQUNXLElBQUksR0FBRyxNQUFNLEVBQUVULEVBQUU7c0hBQ3BCSixrREFBSTtvQ0FBQ2MsVUFBVSxFQUFDLENBQVc7b0NBQUNDLE9BQU8sRUFBQyxDQUFROzhDQUFFVCxLQUFLOzs7Ozs7Ozs7Ozs7Ozs7OztnR0FHdkRMLGlEQUFHO3dCQUFDUSxDQUFDLEVBQUMsQ0FBTTt3QkFBQ0MsT0FBTyxFQUFDLENBQVM7d0JBQUNDLENBQUMsRUFBQyxDQUFHO3dCQUFDSyxDQUFDLEVBQUMsQ0FBTTs4R0FDM0NoQixrREFBSTs0QkFBQ2lCLEVBQUUsRUFBQyxDQUFNO3NDQUFFVixRQUFROzs7Ozs7Ozs7Ozs7Ozs7Ozt3RkFJNUJOLGlEQUFHO2dCQUFDUSxDQUFDLEVBQUMsQ0FBTTtnQkFBQ0MsT0FBTyxFQUFDLENBQVM7Z0JBQUNDLENBQUMsRUFBQyxDQUFHO2dCQUFDSyxDQUFDLEVBQUMsQ0FBTTtzR0FDM0NoQixrREFBSTtvQkFBQ2lCLEVBQUUsRUFBQyxDQUFNOzt3QkFBQyxDQUFvQjt3QkFBQ1QsU0FBUzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBSXRELENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly96ZXJvbmV0Ly4vY29tcG9uZW50cy9Qb3N0TGluay50c3g/YTRiYiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBcbiAgVGV4dCxcbiAgQm94LFxuICBMaW5rXG59IGZyb20gJ0BjaGFrcmEtdWkvcmVhY3QnXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFBvc3QoeyBpZCwgYXV0aG9yLCB0aXRsZSwgc3VidGl0bGUsIGNyZWF0ZWRBdCB9KSB7XG4gIHJldHVybiAoXG4gICAgPEJveCB3PScxMDAlJyBiZ0NvbG9yPScjOTM5MzkzJz5cbiAgICAgIDxCb3ggdz0nMTAwJScgYmdDb2xvcj0nIzY5Njk2OScgcD0nMSc+XG4gICAgICAgIDxUZXh0IGZvbnRTaXplPSdtZCc+KHthdXRob3J9KVxuICAgICAgICAgIDxMaW5rIGhyZWY9e2AvcG9zdC8ke2lkfWB9PlxuICAgICAgICAgICAgPFRleHQgZGVjb3JhdGlvbj0ndW5kZXJsaW5lJyBkaXNwbGF5PSdpbmxpbmUnPnt0aXRsZX08L1RleHQ+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L1RleHQ+XG4gICAgICAgIDxCb3ggdz0nMTAwJScgYmdDb2xvcj0nIzc5Nzk3OScgcD0nMScgaD0nMjBweCc+XG4gICAgICAgICAgPFRleHQgbXQ9Jy0zcHgnPntzdWJ0aXRsZX08L1RleHQ+XG4gICAgICAgIDwvQm94PlxuICAgICAgPC9Cb3g+XG4gICAgICBcbiAgICAgIDxCb3ggdz0nMTAwJScgYmdDb2xvcj0nIzc5Nzk3OScgcD0nMScgaD0nMjBweCc+XG4gICAgICAgIDxUZXh0IG10PSctM3B4Jz7QodGC0LDRgtGM0Y8g0L7Qv9GD0LHQu9C40LrQvtCy0LDQvdCwIHtjcmVhdGVkQXR9PC9UZXh0PlxuICAgICAgPC9Cb3g+XG4gICAgPC9Cb3g+XG4gIClcbn0iXSwibmFtZXMiOlsiVGV4dCIsIkJveCIsIkxpbmsiLCJQb3N0IiwiaWQiLCJhdXRob3IiLCJ0aXRsZSIsInN1YnRpdGxlIiwiY3JlYXRlZEF0IiwidyIsImJnQ29sb3IiLCJwIiwiZm9udFNpemUiLCJocmVmIiwiZGVjb3JhdGlvbiIsImRpc3BsYXkiLCJoIiwibXQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/PostLink.tsx\n");
 
 /***/ }),
 
-/***/ 610:
+/***/ "./components/ZeroHead.tsx":
+/*!*********************************!*\
+  !*** ./components/ZeroHead.tsx ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(930);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(429);
-/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__);
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.extendTheme)({
-    colors: {
-        black: '#999'
-    },
-    components: {
-        Component: {
-            baseStyle: {
-                backgroundColor: '#999999b8'
-            }
-        }
-    },
-    styles: {
-        global: (props)=>({
-                body: {
-                    bg: (0,_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__.mode)('#999999b8', '#737373')(props)
-                }
-            })
-    },
-    useSystemColorMode: true
-}));
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ZeroHead)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction ZeroHead({ title , description , type , url  }) {\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:description\",\n                    content: description\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 11,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:url\",\n                    content: url\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 15,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:type\",\n                    content: type\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 19,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"twitter:title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 23,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"twitter:url\",\n                    content: url\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 27,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    name: \"apple-mobile-web-app-title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 31,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    name: \"application-name\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 35,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                    children: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 39,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n            lineNumber: 6,\n            columnNumber: 7\n        }, this)\n    }, void 0, false));\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1plcm9IZWFkLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBNEI7QUFFYixRQUFRLENBQUNDLFFBQVEsQ0FBQyxDQUFDLENBQUNDLEtBQUssR0FBRUMsV0FBVyxHQUFFQyxJQUFJLEdBQUVDLEdBQUcsRUFBQyxDQUFDLEVBQUUsQ0FBQztJQUNuRSxNQUFNOzhGQUVETCxrREFBSTs7NEZBQ0ZNLENBQUk7b0JBQ0hDLFFBQVEsRUFBQyxDQUFVO29CQUNuQkMsT0FBTyxFQUFFTixLQUFLOzs7Ozs7NEZBRWZJLENBQUk7b0JBQ0hDLFFBQVEsRUFBQyxDQUFnQjtvQkFDekJDLE9BQU8sRUFBRUwsV0FBVzs7Ozs7OzRGQUVyQkcsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQVE7b0JBQ2pCQyxPQUFPLEVBQUVILEdBQUc7Ozs7Ozs0RkFFYkMsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQVM7b0JBQ2xCQyxPQUFPLEVBQUVKLElBQUk7Ozs7Ozs0RkFFZEUsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQWU7b0JBQ3hCQyxPQUFPLEVBQUVOLEtBQUs7Ozs7Ozs0RkFFZkksQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQWE7b0JBQ3RCQyxPQUFPLEVBQUVILEdBQUc7Ozs7Ozs0RkFFYkMsQ0FBSTtvQkFDSEcsSUFBSSxFQUFDLENBQTRCO29CQUNqQ0QsT0FBTyxFQUFFTixLQUFLOzs7Ozs7NEZBRWZJLENBQUk7b0JBQ0hHLElBQUksRUFBQyxDQUFrQjtvQkFDdkJELE9BQU8sRUFBRU4sS0FBSzs7Ozs7OzRGQUVmQSxDQUFLOzhCQUFFQSxLQUFLOzs7Ozs7Ozs7Ozs7O0FBSXJCLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly96ZXJvbmV0Ly4vY29tcG9uZW50cy9aZXJvSGVhZC50c3g/N2QxNiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFplcm9IZWFkKHsgdGl0bGUsIGRlc2NyaXB0aW9uLCB0eXBlLCB1cmwgfSkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgXG4gICAgICAgICAgcHJvcGVydHk9XCJvZzp0aXRsZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBwcm9wZXJ0eT1cIm9nOmRlc2NyaXB0aW9uXCIgXG4gICAgICAgICAgY29udGVudD17ZGVzY3JpcHRpb259XG4gICAgICAgIC8+XG4gICAgICAgIDxtZXRhIFxuICAgICAgICAgIHByb3BlcnR5PVwib2c6dXJsXCIgXG4gICAgICAgICAgY29udGVudD17dXJsfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YVxuICAgICAgICAgIHByb3BlcnR5PVwib2c6dHlwZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3R5cGV9XG4gICAgICAgIC8+XG4gICAgICAgIDxtZXRhIFxuICAgICAgICAgIHByb3BlcnR5PVwidHdpdHRlcjp0aXRsZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBwcm9wZXJ0eT1cInR3aXR0ZXI6dXJsXCIgXG4gICAgICAgICAgY29udGVudD17dXJsfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBuYW1lPVwiYXBwbGUtbW9iaWxlLXdlYi1hcHAtdGl0bGVcIiBcbiAgICAgICAgICBjb250ZW50PXt0aXRsZX1cbiAgICAgICAgLz4gIFxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBuYW1lPVwiYXBwbGljYXRpb24tbmFtZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8dGl0bGU+e3RpdGxlfTwvdGl0bGU+XG4gICAgICA8L0hlYWQ+XG4gICAgPC8+XG4gICk7XG59Il0sIm5hbWVzIjpbIkhlYWQiLCJaZXJvSGVhZCIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJ0eXBlIiwidXJsIiwibWV0YSIsInByb3BlcnR5IiwiY29udGVudCIsIm5hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/ZeroHead.tsx\n");
 
 /***/ }),
 
-/***/ 930:
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _zeronet_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../zeronet.theme */ \"./zeronet.theme.ts\");\n/* harmony import */ var _components_PostLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/PostLink */ \"./components/PostLink.tsx\");\n/* harmony import */ var _components_ZeroHead__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ZeroHead */ \"./components/ZeroHead.tsx\");\n\n\n\n\n\nfunction Home({ posts  }) {\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_ZeroHead__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n                title: \"zer\\xf8net\",\n                description: \"\\xd8\",\n                type: \"website\",\n                url: \"https://zeronet.space/\"\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, {\n                maxW: \"container.xl\",\n                colorScheme: _zeronet_theme__WEBPACK_IMPORTED_MODULE_2__[\"default\"].colors.black,\n                children: [\n                    \"Тут что-то будет...\",\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"br\", {}, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                        lineNumber: 26,\n                        columnNumber: 28\n                    }, this),\n                    JSON.parse(posts).map((post)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_PostLink__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                                id: post.id,\n                                author: post.author,\n                                title: post.title,\n                                subtitle: post.subtitle,\n                                createdAt: post.createdAt\n                            }, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                lineNumber: 28,\n                                columnNumber: 11\n                            }, this)\n                        }, void 0, false)\n                    )\n                ]\n            }, void 0, true, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                lineNumber: 25,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true));\n};\nasync function getServerSideProps() {\n    const res = await fetch('https://zeronet.space/api/posts');\n    const posts = await res.text();\n    return {\n        props: {\n            posts\n        }\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUt5QjtBQUdXO0FBSVM7QUFDQTtBQUU5QixRQUFRLENBQUNJLElBQUksQ0FBQyxDQUFDLENBQUNDLEtBQUssRUFBQyxDQUFDLEVBQUUsQ0FBQztJQUN2QyxNQUFNOzt3RkFFREYsNERBQVE7Z0JBQ1BHLEtBQUssRUFBQyxDQUFTO2dCQUNkQyxXQUFVLEVBQUMsQ0FBRztnQkFDZEMsSUFBRyxFQUFDLENBQVM7Z0JBQ2RDLEdBQUcsRUFBQyxDQUF3Qjs7Ozs7O3dGQUU3QlQsdURBQVM7Z0JBQUNVLElBQUksRUFBQyxDQUFjO2dCQUFDQyxXQUFXLEVBQUVWLG1FQUFrQjs7b0JBQUUsQ0FDM0M7Z0dBQUNhLENBQUU7Ozs7O29CQUNyQkMsSUFBSSxDQUFDQyxLQUFLLENBQUNYLEtBQUssRUFBRVksR0FBRyxFQUFDQyxJQUFJO2tIQUN4QmhCLDREQUFRO2dDQUNQaUIsRUFBRSxFQUFFRCxJQUFJLENBQUNDLEVBQUU7Z0NBQ1hDLE1BQU0sRUFBRUYsSUFBSSxDQUFDRSxNQUFNO2dDQUNuQmQsS0FBSyxFQUFFWSxJQUFJLENBQUNaLEtBQUs7Z0NBQ2pCZSxRQUFRLEVBQUVILElBQUksQ0FBQ0csUUFBUTtnQ0FDdkJDLFNBQVMsRUFBRUosSUFBSSxDQUFDSSxTQUFTOzs7Ozs7Ozs7Ozs7Ozs7O0FBTXJDLENBQUM7QUFFTSxlQUFlQyxrQkFBa0IsR0FBRyxDQUFDO0lBQzFDLEtBQUssQ0FBQ0MsR0FBRyxHQUFHLEtBQUssQ0FBQ0MsS0FBSyxDQUFDLENBQWlDO0lBQ3pELEtBQUssQ0FBQ3BCLEtBQUssR0FBRyxLQUFLLENBQUNtQixHQUFHLENBQUNFLElBQUk7SUFFNUIsTUFBTSxDQUFDLENBQUM7UUFBQ0MsS0FBSyxFQUFFLENBQUM7WUFBQ3RCLEtBQUs7UUFBQyxDQUFDO0lBQUMsQ0FBQztBQUM3QixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vemVyb25ldC8uL3BhZ2VzL2luZGV4LnRzeD8wN2ZmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFxuICBDb250YWluZXIsXG4gIENlbnRlcixcbiAgVGV4dCxcbiAgQm94IFxufSBmcm9tICdAY2hha3JhLXVpL3JlYWN0J1xuaW1wb3J0IHsgRmxleCwgU3BhY2VyIH0gZnJvbSAnQGNoYWtyYS11aS9yZWFjdCdcblxuaW1wb3J0IHRoZW1lIGZyb20gJy4uL3plcm9uZXQudGhlbWUnXG5cbmltcG9ydCBzdHlsZXMgZnJvbSAnLi4vc3R5bGVzL0hvbWUubW9kdWxlLnNjc3MnXG5pbXBvcnQgUG9zdCBmcm9tICcuLi9jb21wb25lbnRzL1Bvc3QnXG5pbXBvcnQgUG9zdExpbmsgZnJvbSAnLi4vY29tcG9uZW50cy9Qb3N0TGluaydcbmltcG9ydCBaZXJvSGVhZCBmcm9tICcuLi9jb21wb25lbnRzL1plcm9IZWFkJ1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKHsgcG9zdHMgfSkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8WmVyb0hlYWRcbiAgICAgICAgdGl0bGU9J3plcsO4bmV0J1xuICAgICAgICBkZXNjcmlwdGlvbj0nw5gnXG4gICAgICAgIHR5cGU9J3dlYnNpdGUnXG4gICAgICAgIHVybD0naHR0cHM6Ly96ZXJvbmV0LnNwYWNlLydcbiAgICAgIC8+XG4gICAgICA8Q29udGFpbmVyIG1heFc9J2NvbnRhaW5lci54bCcgY29sb3JTY2hlbWU9e3RoZW1lLmNvbG9ycy5ibGFja30+XG4gICAgICAgINCi0YPRgiDRh9GC0L4t0YLQviDQsdGD0LTQtdGCLi4uPGJyLz5cbiAgICAgICAge0pTT04ucGFyc2UocG9zdHMpLm1hcChwb3N0ID0+IDw+XG4gICAgICAgICAgPFBvc3RMaW5rXG4gICAgICAgICAgICBpZD17cG9zdC5pZH1cbiAgICAgICAgICAgIGF1dGhvcj17cG9zdC5hdXRob3J9XG4gICAgICAgICAgICB0aXRsZT17cG9zdC50aXRsZX1cbiAgICAgICAgICAgIHN1YnRpdGxlPXtwb3N0LnN1YnRpdGxlfVxuICAgICAgICAgICAgY3JlYXRlZEF0PXtwb3N0LmNyZWF0ZWRBdH1cbiAgICAgICAgICAvPlxuICAgICAgICA8Lz4pfVxuICAgICAgPC9Db250YWluZXI+XG4gICAgPC8+XG4gIClcbn1cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFNlcnZlclNpZGVQcm9wcygpIHtcbiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJ2h0dHBzOi8vemVyb25ldC5zcGFjZS9hcGkvcG9zdHMnKTtcbiAgY29uc3QgcG9zdHMgPSBhd2FpdCByZXMudGV4dCgpO1xuXG4gIHJldHVybiB7IHByb3BzOiB7IHBvc3RzIH0gfTtcbn1cbiJdLCJuYW1lcyI6WyJDb250YWluZXIiLCJ0aGVtZSIsIlBvc3RMaW5rIiwiWmVyb0hlYWQiLCJIb21lIiwicG9zdHMiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwidHlwZSIsInVybCIsIm1heFciLCJjb2xvclNjaGVtZSIsImNvbG9ycyIsImJsYWNrIiwiYnIiLCJKU09OIiwicGFyc2UiLCJtYXAiLCJwb3N0IiwiaWQiLCJhdXRob3IiLCJzdWJ0aXRsZSIsImNyZWF0ZWRBdCIsImdldFNlcnZlclNpZGVQcm9wcyIsInJlcyIsImZldGNoIiwidGV4dCIsInByb3BzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/index.tsx\n");
+
+/***/ }),
+
+/***/ "./zeronet.theme.ts":
+/*!**************************!*\
+  !*** ./zeronet.theme.ts ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/theme-tools */ \"@chakra-ui/theme-tools\");\n/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__);\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.extendTheme)({\n    colors: {\n        black: '#999'\n    },\n    components: {\n        Component: {\n            baseStyle: {\n                backgroundColor: '#999999b8'\n            }\n        }\n    },\n    styles: {\n        global: (props)=>({\n                body: {\n                    bg: (0,_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__.mode)('#999999b8', '#737373')(props)\n                }\n            })\n    },\n    useSystemColorMode: true\n}));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi96ZXJvbmV0LnRoZW1lLnRzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQThDO0FBQ21CO0FBR2pFLGlFQUFlQSw2REFBVyxDQUFDLENBQUM7SUFDMUJFLE1BQU0sRUFBRSxDQUFDO1FBQ1BDLEtBQUssRUFBRSxDQUFNO0lBQ2YsQ0FBQztJQUNEQyxVQUFVLEVBQUUsQ0FBQztRQUNYQyxTQUFTLEVBQUUsQ0FBQztZQUNWQyxTQUFTLEVBQUUsQ0FBQztnQkFDVkMsZUFBZSxFQUFFLENBQVc7WUFDOUIsQ0FBQztRQUNILENBQUM7SUFDSCxDQUFDO0lBQ0RDLE1BQU0sRUFBRSxDQUFDO1FBQ1BDLE1BQU0sR0FBR0MsS0FBcUMsSUFBTSxDQUFDO2dCQUNuREMsSUFBSSxFQUFFLENBQUM7b0JBQ0xDLEVBQUUsRUFBRVgsNERBQUksQ0FBQyxDQUFXLFlBQUMsQ0FBUyxVQUFFUyxLQUFLO2dCQUN2QyxDQUFDO1lBQ0gsQ0FBQztJQUNILENBQUM7SUFDREcsa0JBQWtCLEVBQUUsSUFBSTtBQUMxQixDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly96ZXJvbmV0Ly4vemVyb25ldC50aGVtZS50cz9hYjExIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV4dGVuZFRoZW1lIH0gZnJvbSAnQGNoYWtyYS11aS9yZWFjdCdcbmltcG9ydCB7IG1vZGUsIFN0eWxlRnVuY3Rpb25Qcm9wcyB9IGZyb20gJ0BjaGFrcmEtdWkvdGhlbWUtdG9vbHMnXG5pbXBvcnQgeyBEaWN0IH0gZnJvbSAnQGNoYWtyYS11aS91dGlscydcblxuZXhwb3J0IGRlZmF1bHQgZXh0ZW5kVGhlbWUoe1xuICBjb2xvcnM6IHtcbiAgICBibGFjazogJyM5OTknXG4gIH0sXG4gIGNvbXBvbmVudHM6IHtcbiAgICBDb21wb25lbnQ6IHtcbiAgICAgIGJhc2VTdHlsZToge1xuICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICcjOTk5OTk5YjgnXG4gICAgICB9LFxuICAgIH1cbiAgfSxcbiAgc3R5bGVzOiB7XG4gICAgZ2xvYmFsOiAocHJvcHM6IERpY3Q8YW55PiB8IFN0eWxlRnVuY3Rpb25Qcm9wcykgPT4gKHtcbiAgICAgIGJvZHk6IHtcbiAgICAgICAgYmc6IG1vZGUoJyM5OTk5OTliOCcsJyM3MzczNzMnKShwcm9wcyksXG4gICAgICB9XG4gICAgfSlcbiAgfSxcbiAgdXNlU3lzdGVtQ29sb3JNb2RlOiB0cnVlLFxufSkiXSwibmFtZXMiOlsiZXh0ZW5kVGhlbWUiLCJtb2RlIiwiY29sb3JzIiwiYmxhY2siLCJjb21wb25lbnRzIiwiQ29tcG9uZW50IiwiYmFzZVN0eWxlIiwiYmFja2dyb3VuZENvbG9yIiwic3R5bGVzIiwiZ2xvYmFsIiwicHJvcHMiLCJib2R5IiwiYmciLCJ1c2VTeXN0ZW1Db2xvck1vZGUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./zeronet.theme.ts\n");
+
+/***/ }),
+
+/***/ "@chakra-ui/react":
+/*!***********************************!*\
+  !*** external "@chakra-ui/react" ***!
+  \***********************************/
 /***/ ((module) => {
 
 module.exports = require("@chakra-ui/react");
 
 /***/ }),
 
-/***/ 429:
+/***/ "@chakra-ui/theme-tools":
+/*!*****************************************!*\
+  !*** external "@chakra-ui/theme-tools" ***!
+  \*****************************************/
 /***/ ((module) => {
 
 module.exports = require("@chakra-ui/theme-tools");
 
 /***/ }),
 
-/***/ 997:
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -109,7 +100,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(75));
+var __webpack_exports__ = (__webpack_exec__("./pages/index.tsx"));
 module.exports = __webpack_exports__;
 
 })();
