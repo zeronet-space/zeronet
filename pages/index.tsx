@@ -42,6 +42,14 @@ export default function Home({ posts }) {
           </Box>
         </>)}
       </Box>
+      <Box position='fixed' style={{
+        width: '100%',
+        bottom: '0'
+      }}>
+        <Box w='100%' bgColor='#898989' p='1px' pl='5px' h='20px'>
+          Авторское право &copy; 2021-{new Date().getFullYear()}. Нихуя не защищено :KekW:
+        </Box>
+      </Box>
     </>
   )
 }
