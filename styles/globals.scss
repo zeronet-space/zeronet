@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+hr {
+  border: 1px dotted #000 !important; 
+  width: 100%; 
+  color: #000;  
+  margin-left: auto;
+}
+
+/*{[...Array(width)].map((elementInArray, index) => ( 
+          '•'
+        ))}*/
