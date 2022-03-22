@@ -37,7 +37,7 @@ export default function Home({ posts }) {
               <Text mt='-3px'><b><i>Статья опубликована</i></b> {post.meta.createdAt}</Text>
             </Box>
             <Box w='100%' bgColor='#898989' p='1' h='20px'>
-              <Text mt='-3px'><b><i>Последнее изменение</i></b> {post.meta.updatedAt}</Text>
+              <Text mt='-3px'><b><i>Последнее изменение</i></b> {post.meta.modifiedAt}</Text>
             </Box>
           </Box>
         </>)}

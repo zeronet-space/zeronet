@@ -30,9 +30,23 @@ export default function PostPage({ post }) {
         type='article'
         url={`https://zeronet.space/post/${post.meta.id}`}
       />
-      <PageTitle title={`(${post.meta.author}) ${post.meta.title}`} />
+      <PageTitle title={post.meta.title} />
       <PageSubTitle title={post.meta.subtitle || <b><i>Подзаголовок не указан...</i></b>} />
-      <Box w='100%' p='2' fontSize='16px' ref={rawRef} />
+      <Box position='relative' w='100%' p='2' fontSize='16px' ref={rawRef} />
+      <Box position='fixed' style={{
+        width: '100%',
+        bottom: '0'
+      }}>
+        <Box w='100%' bgColor='#898989' p='1' h='20px'>
+          <Text mt='-3px'><b><i>Автор статьи</i></b> {post.meta.author}</Text>
+        </Box>
+        <Box w='100%' bgColor='#898989' p='1' h='20px'>
+          <Text mt='-3px'><b><i>Статья опубликована</i></b> {post.meta.createdAt}</Text>
+        </Box>
+        <Box w='100%' bgColor='#898989' p='1' h='20px'>
+          <Text mt='-3px'><b><i>Последнее изменение</i></b> {post.meta.modifiedAt}</Text>
+        </Box>
+      </Box>
     </>
   )
 }
