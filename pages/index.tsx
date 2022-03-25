@@ -4,8 +4,23 @@ import {
   Link 
 } from '@chakra-ui/react'
 import { globby } from 'globby'
-import mkmeta from 'marked-metadata'
+
 import fs from 'fs'
+
+import md_meta from 'markdown-it-meta'
+import md_attrs from 'markdown-it-attrs'
+
+const md = require('markdown-it')({
+  html: true,
+  xhtmlOut: true,
+  breaks: true,
+  langPrefix: 'l-',
+  linkify: true,
+  typographer: true,
+  quotes: '“”‘’'
+});
+md.use(md_meta);
+md.use(md_attrs);
 
 import theme from '../zeronet.theme'
 
@@ -21,12 +36,12 @@ export default function Home({ posts }) {
         type='website'
         url='https://zeronet.space/'
       />
-      <Box w='100%' m='0'>
+      <Box position='relative' w='100%' m='0'>
         {posts.map(post => <>
-          <Box w='100%' bgColor='#979797' mb='1'>
+          <Box position='relative' w='100%' bgColor='#979797' mb='1'>
             <Box w='100%' bgColor='#989898' p='1'>
               <Text fontSize='md'><Link href={`/post/${post.meta.id}`}>{post.meta.title}</Link></Text>
-              <Box w='100%' bgColor='#898989' p='1' h='20px'>
+              <Box w='100%' bgColor='#898989' p='1'>
                 <Text mt='-3px'>{post.meta.subtitle || <b><i>Подзаголовок не указан...</i></b>}</Text>
               </Box>
             </Box>
@@ -42,7 +57,7 @@ export default function Home({ posts }) {
           </Box>
         </>)}
       </Box>
-      <Box position='fixed' style={{
+      <Box position='sticky' style={{
         width: '100%',
         bottom: '0'
       }}>
@@ -55,20 +70,17 @@ export default function Home({ posts }) {
 }
 
 export async function getServerSideProps() {
-  let posts: any = await globby("./articles/**/*.md");
-  posts = posts.map(post => {
-    let md = new mkmeta(post);
-    md.defineTokens('#{--', '--}#');
-    let meta = md.metadata(),
-        data = md.markdown();
+  let posts = (await globby("./articles/**/*.md")).map(post => {
+    let document = md.render(fs.readFileSync(post, "utf-8").toString());
     let stat = fs.statSync(post);
+
     return { 
       meta: {
-        ...meta, 
+        ...md.meta, 
         createdAt: stat.ctime.toLocaleString("ru-RU"), 
         modifiedAt: stat.mtime.toLocaleString("ru-RU"), 
-      }, 
-      data: data 
+      },
+      data: document,
     };
   });
   return { props: { posts: posts } };

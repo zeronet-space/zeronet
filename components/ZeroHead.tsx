@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head"
 
 export default function ZeroHead({ title, description, type, url }) {
   return (
@@ -10,6 +10,10 @@ export default function ZeroHead({ title, description, type, url }) {
         />
         <meta 
           property="og:description" 
+          content={description}
+        />
+        <meta 
+          name="description" 
           content={description}
         />
         <meta 
@@ -34,6 +38,10 @@ export default function ZeroHead({ title, description, type, url }) {
         />  
         <meta 
           name="application-name" 
+          content={title}
+        />
+        <meta 
+          name="apple-mobile-web-app-title" 
           content={title}
         />
         <title>{title}</title>

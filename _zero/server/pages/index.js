@@ -1,92 +1,254 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/index";
-exports.ids = ["pages/index"];
+exports.id = 405;
+exports.ids = [405];
 exports.modules = {
 
-/***/ "./components/ZeroHead.tsx":
-/*!*********************************!*\
-  !*** ./components/ZeroHead.tsx ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ZeroHead)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction ZeroHead({ title , description , type , url  }) {\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:description\",\n                    content: description\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 11,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:url\",\n                    content: url\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 15,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"og:type\",\n                    content: type\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 19,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"twitter:title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 23,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    property: \"twitter:url\",\n                    content: url\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 27,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    name: \"apple-mobile-web-app-title\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 31,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                    name: \"application-name\",\n                    content: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 35,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                    children: title\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n                    lineNumber: 39,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/components/ZeroHead.tsx\",\n            lineNumber: 6,\n            columnNumber: 7\n        }, this)\n    }, void 0, false));\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1plcm9IZWFkLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBNEI7QUFFYixRQUFRLENBQUNDLFFBQVEsQ0FBQyxDQUFDLENBQUNDLEtBQUssR0FBRUMsV0FBVyxHQUFFQyxJQUFJLEdBQUVDLEdBQUcsRUFBQyxDQUFDLEVBQUUsQ0FBQztJQUNuRSxNQUFNOzhGQUVETCxrREFBSTs7NEZBQ0ZNLENBQUk7b0JBQ0hDLFFBQVEsRUFBQyxDQUFVO29CQUNuQkMsT0FBTyxFQUFFTixLQUFLOzs7Ozs7NEZBRWZJLENBQUk7b0JBQ0hDLFFBQVEsRUFBQyxDQUFnQjtvQkFDekJDLE9BQU8sRUFBRUwsV0FBVzs7Ozs7OzRGQUVyQkcsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQVE7b0JBQ2pCQyxPQUFPLEVBQUVILEdBQUc7Ozs7Ozs0RkFFYkMsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQVM7b0JBQ2xCQyxPQUFPLEVBQUVKLElBQUk7Ozs7Ozs0RkFFZEUsQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQWU7b0JBQ3hCQyxPQUFPLEVBQUVOLEtBQUs7Ozs7Ozs0RkFFZkksQ0FBSTtvQkFDSEMsUUFBUSxFQUFDLENBQWE7b0JBQ3RCQyxPQUFPLEVBQUVILEdBQUc7Ozs7Ozs0RkFFYkMsQ0FBSTtvQkFDSEcsSUFBSSxFQUFDLENBQTRCO29CQUNqQ0QsT0FBTyxFQUFFTixLQUFLOzs7Ozs7NEZBRWZJLENBQUk7b0JBQ0hHLElBQUksRUFBQyxDQUFrQjtvQkFDdkJELE9BQU8sRUFBRU4sS0FBSzs7Ozs7OzRGQUVmQSxDQUFLOzhCQUFFQSxLQUFLOzs7Ozs7Ozs7Ozs7O0FBSXJCLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly96ZXJvbmV0Ly4vY29tcG9uZW50cy9aZXJvSGVhZC50c3g/N2QxNiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFplcm9IZWFkKHsgdGl0bGUsIGRlc2NyaXB0aW9uLCB0eXBlLCB1cmwgfSkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgXG4gICAgICAgICAgcHJvcGVydHk9XCJvZzp0aXRsZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBwcm9wZXJ0eT1cIm9nOmRlc2NyaXB0aW9uXCIgXG4gICAgICAgICAgY29udGVudD17ZGVzY3JpcHRpb259XG4gICAgICAgIC8+XG4gICAgICAgIDxtZXRhIFxuICAgICAgICAgIHByb3BlcnR5PVwib2c6dXJsXCIgXG4gICAgICAgICAgY29udGVudD17dXJsfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YVxuICAgICAgICAgIHByb3BlcnR5PVwib2c6dHlwZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3R5cGV9XG4gICAgICAgIC8+XG4gICAgICAgIDxtZXRhIFxuICAgICAgICAgIHByb3BlcnR5PVwidHdpdHRlcjp0aXRsZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBwcm9wZXJ0eT1cInR3aXR0ZXI6dXJsXCIgXG4gICAgICAgICAgY29udGVudD17dXJsfVxuICAgICAgICAvPlxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBuYW1lPVwiYXBwbGUtbW9iaWxlLXdlYi1hcHAtdGl0bGVcIiBcbiAgICAgICAgICBjb250ZW50PXt0aXRsZX1cbiAgICAgICAgLz4gIFxuICAgICAgICA8bWV0YSBcbiAgICAgICAgICBuYW1lPVwiYXBwbGljYXRpb24tbmFtZVwiIFxuICAgICAgICAgIGNvbnRlbnQ9e3RpdGxlfVxuICAgICAgICAvPlxuICAgICAgICA8dGl0bGU+e3RpdGxlfTwvdGl0bGU+XG4gICAgICA8L0hlYWQ+XG4gICAgPC8+XG4gICk7XG59Il0sIm5hbWVzIjpbIkhlYWQiLCJaZXJvSGVhZCIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJ0eXBlIiwidXJsIiwibWV0YSIsInByb3BlcnR5IiwiY29udGVudCIsIm5hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/ZeroHead.tsx\n");
-
-/***/ }),
-
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
+/***/ 186:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var globby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! globby */ \"globby\");\n/* harmony import */ var marked_metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! marked-metadata */ \"marked-metadata\");\n/* harmony import */ var marked_metadata__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(marked_metadata__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! fs */ \"fs\");\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _components_ZeroHead__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ZeroHead */ \"./components/ZeroHead.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([globby__WEBPACK_IMPORTED_MODULE_2__]);\nglobby__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\nfunction Home({ posts  }) {\n    return(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_ZeroHead__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n                title: \"zer\\xf8net\",\n                description: \"\\xd8\",\n                type: \"website\",\n                url: \"https://zeronet.space/\"\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                lineNumber: 18,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                w: \"100%\",\n                m: \"0\",\n                children: posts.map((post)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                            w: \"100%\",\n                            bgColor: \"#979797\",\n                            mb: \"1\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                                    w: \"100%\",\n                                    bgColor: \"#989898\",\n                                    p: \"1\",\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                            fontSize: \"md\",\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Link, {\n                                                href: `/post/${post.meta.id}`,\n                                                children: post.meta.title\n                                            }, void 0, false, {\n                                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                lineNumber: 28,\n                                                columnNumber: 35\n                                            }, this)\n                                        }, void 0, false, {\n                                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                            lineNumber: 28,\n                                            columnNumber: 15\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                                            w: \"100%\",\n                                            bgColor: \"#898989\",\n                                            p: \"1\",\n                                            h: \"20px\",\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                                mt: \"-3px\",\n                                                children: post.meta.subtitle || /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                        children: \"Подзаголовок не указан...\"\n                                                    }, void 0, false, {\n                                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                        lineNumber: 30,\n                                                        columnNumber: 59\n                                                    }, this)\n                                                }, void 0, false, {\n                                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                    lineNumber: 30,\n                                                    columnNumber: 56\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                lineNumber: 30,\n                                                columnNumber: 17\n                                            }, this)\n                                        }, void 0, false, {\n                                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                            lineNumber: 29,\n                                            columnNumber: 15\n                                        }, this)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                    lineNumber: 27,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                                    w: \"100%\",\n                                    bgColor: \"#898989\",\n                                    p: \"1\",\n                                    h: \"20px\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                        mt: \"-3px\",\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                    children: \"Автор статьи\"\n                                                }, void 0, false, {\n                                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                    lineNumber: 34,\n                                                    columnNumber: 34\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                lineNumber: 34,\n                                                columnNumber: 31\n                                            }, this),\n                                            \" \",\n                                            post.meta.author\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                        lineNumber: 34,\n                                        columnNumber: 15\n                                    }, this)\n                                }, void 0, false, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                    lineNumber: 33,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                                    w: \"100%\",\n                                    bgColor: \"#898989\",\n                                    p: \"1\",\n                                    h: \"20px\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                        mt: \"-3px\",\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                    children: \"Статья опубликована\"\n                                                }, void 0, false, {\n                                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                    lineNumber: 37,\n                                                    columnNumber: 34\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                lineNumber: 37,\n                                                columnNumber: 31\n                                            }, this),\n                                            \" \",\n                                            post.meta.createdAt\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                        lineNumber: 37,\n                                        columnNumber: 15\n                                    }, this)\n                                }, void 0, false, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                    lineNumber: 36,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                                    w: \"100%\",\n                                    bgColor: \"#898989\",\n                                    p: \"1\",\n                                    h: \"20px\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                                        mt: \"-3px\",\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                    children: \"Последнее изменение\"\n                                                }, void 0, false, {\n                                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                    lineNumber: 40,\n                                                    columnNumber: 34\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                                lineNumber: 40,\n                                                columnNumber: 31\n                                            }, this),\n                                            \" \",\n                                            post.meta.modifiedAt\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                        lineNumber: 40,\n                                        columnNumber: 15\n                                    }, this)\n                                }, void 0, false, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                                    lineNumber: 39,\n                                    columnNumber: 13\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                            lineNumber: 26,\n                            columnNumber: 11\n                        }, this)\n                    }, void 0, false)\n                )\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                lineNumber: 24,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                position: \"fixed\",\n                style: {\n                    width: '100%',\n                    bottom: '0'\n                },\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n                    w: \"100%\",\n                    bgColor: \"#898989\",\n                    m: \"1\",\n                    h: \"20px\",\n                    children: \"Если проект сдох, во всём виноват Айвинг.\"\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                    lineNumber: 49,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/index.tsx\",\n                lineNumber: 45,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true));\n};\nasync function getServerSideProps() {\n    let posts = await (0,globby__WEBPACK_IMPORTED_MODULE_2__.globby)(\"./articles/**/*.md\");\n    posts = posts.map((post)=>{\n        let md = new (marked_metadata__WEBPACK_IMPORTED_MODULE_3___default())(post);\n        md.defineTokens('#{--', '--}#');\n        let meta = md.metadata(), data = md.markdown();\n        let stat = fs__WEBPACK_IMPORTED_MODULE_4___default().statSync(post);\n        return {\n            meta: {\n                ...meta,\n                createdAt: stat.ctime.toLocaleString(\"ru-RU\"),\n                modifiedAt: stat.mtime.toLocaleString(\"ru-RU\")\n            },\n            data: data\n        };\n    });\n    return {\n        props: {\n            posts: posts\n        }\n    };\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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aURBQUc7b0JBQUNhLENBQUMsRUFBQyxDQUFNO29CQUFDSSxPQUFPLEVBQUMsQ0FBUztvQkFBQ0gsQ0FBQyxFQUFDLENBQUc7b0JBQUNVLENBQUMsRUFBQyxDQUFNOzhCQUFDLENBRS9DOzs7Ozs7Ozs7Ozs7O0FBSVIsQ0FBQztBQUVNLGVBQWVZLGtCQUFrQixHQUFHLENBQUM7SUFDMUMsR0FBRyxDQUFDNUIsS0FBSyxHQUFRLEtBQUssQ0FBQ0wsOENBQU0sQ0FBQyxDQUFvQjtJQUNsREssS0FBSyxHQUFHQSxLQUFLLENBQUNPLEdBQUcsRUFBQ0MsSUFBSSxHQUFJLENBQUM7UUFDekIsR0FBRyxDQUFDcUIsRUFBRSxHQUFHLEdBQUcsQ0FBQ2pDLHdEQUFNLENBQUNZLElBQUk7UUFDeEJxQixFQUFFLENBQUNDLFlBQVksQ0FBQyxDQUFNLE9BQUUsQ0FBTTtRQUM5QixHQUFHLENBQUNoQixJQUFJLEdBQUdlLEVBQUUsQ0FBQ0UsUUFBUSxJQUNsQkMsSUFBSSxHQUFHSCxFQUFFLENBQUNJLFFBQVE7UUFDdEIsR0FBRyxDQUFDQyxJQUFJLEdBQUdyQyxrREFBVyxDQUFDVyxJQUFJO1FBQzNCLE1BQU0sQ0FBQyxDQUFDO1lBQ05NLElBQUksRUFBRSxDQUFDO21CQUNGQSxJQUFJO2dCQUNQUSxTQUFTLEVBQUVZLElBQUksQ0FBQ0UsS0FBSyxDQUFDQyxjQUFjLENBQUMsQ0FBTztnQkFDNUNkLFVBQVUsRUFBRVcsSUFBSSxDQUFDSSxLQUFLLENBQUNELGNBQWMsQ0FBQyxDQUFPO1lBQy9DLENBQUM7WUFDREwsSUFBSSxFQUFFQSxJQUFJO1FBQ1osQ0FBQztJQUNILENBQUM7SUFDRCxNQUFNLENBQUMsQ0FBQztRQUFDTyxLQUFLLEVBQUUsQ0FBQztZQUFDdkMsS0FBSyxFQUFFQSxLQUFLO1FBQUMsQ0FBQztJQUFDLENBQUM7QUFDcEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3plcm9uZXQvLi9wYWdlcy9pbmRleC50c3g/MDdmZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBcbiAgQm94LCBcbiAgVGV4dCwgXG4gIExpbmsgXG59IGZyb20gJ0BjaGFrcmEtdWkvcmVhY3QnXG5pbXBvcnQgeyBnbG9iYnkgfSBmcm9tICdnbG9iYnknXG5pbXBvcnQgbWttZXRhIGZyb20gJ21hcmtlZC1tZXRhZGF0YSdcbmltcG9ydCBmcyBmcm9tICdmcydcblxuaW1wb3J0IHRoZW1lIGZyb20gJy4uL3plcm9uZXQudGhlbWUnXG5cbmltcG9ydCBzdHlsZXMgZnJvbSAnLi4vc3R5bGVzL0hvbWUubW9kdWxlLnNjc3MnXG5pbXBvcnQgWmVyb0hlYWQgZnJvbSAnLi4vY29tcG9uZW50cy9aZXJvSGVhZCdcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7IHBvc3RzIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPFplcm9IZWFkXG4gICAgICAgIHRpdGxlPSd6ZXLDuG5ldCdcbiAgICAgICAgZGVzY3JpcHRpb249J8OYJ1xuICAgICAgICB0eXBlPSd3ZWJzaXRlJ1xuICAgICAgICB1cmw9J2h0dHBzOi8vemVyb25ldC5zcGFjZS8nXG4gICAgICAvPlxuICAgICAgPEJveCB3PScxMDAlJyBtPScwJz5cbiAgICAgICAge3Bvc3RzLm1hcChwb3N0ID0+IDw+XG4gICAgICAgICAgPEJveCB3PScxMDAlJyBiZ0NvbG9yPScjOTc5Nzk3JyBtYj0nMSc+XG4gICAgICAgICAgICA8Qm94IHc9JzEwMCUnIGJnQ29sb3I9JyM5ODk4OTgnIHA9JzEnPlxuICAgICAgICAgICAgICA8VGV4dCBmb250U2l6ZT0nbWQnPjxMaW5rIGhyZWY9e2AvcG9zdC8ke3Bvc3QubWV0YS5pZH1gfT57cG9zdC5tZXRhLnRpdGxlfTwvTGluaz48L1RleHQ+XG4gICAgICAgICAgICAgIDxCb3ggdz0nMTAwJScgYmdDb2xvcj0nIzg5ODk4OScgcD0nMScgaD0nMjBweCc+XG4gICAgICAgICAgICAgICAgPFRleHQgbXQ9Jy0zcHgnPntwb3N0Lm1ldGEuc3VidGl0bGUgfHwgPGI+PGk+0J/QvtC00LfQsNCz0L7Qu9C+0LLQvtC6INC90LUg0YPQutCw0LfQsNC9Li4uPC9pPjwvYj59PC9UZXh0PlxuICAgICAgICAgICAgICA8L0JveD5cbiAgICAgICAgICAgIDwvQm94PlxuICAgICAgICAgICAgPEJveCB3PScxMDAlJyBiZ0NvbG9yPScjODk4OTg5JyBwPScxJyBoPScyMHB4Jz5cbiAgICAgICAgICAgICAgPFRleHQgbXQ9Jy0zcHgnPjxiPjxpPtCQ0LLRgtC+0YAg0YHRgtCw0YLRjNC4PC9pPjwvYj4ge3Bvc3QubWV0YS5hdXRob3J9PC9UZXh0PlxuICAgICAgICAgICAgPC9Cb3g+XG4gICAgICAgICAgICA8Qm94IHc9JzEwMCUnIGJnQ29sb3I9JyM4OTg5ODknIHA9JzEnIGg9JzIwcHgnPlxuICAgICAgICAgICAgICA8VGV4dCBtdD0nLTNweCc+PGI+PGk+0KHRgtCw0YLRjNGPINC+0L/Rg9Cx0LvQuNC60L7QstCw0L3QsDwvaT48L2I+IHtwb3N0Lm1ldGEuY3JlYXRlZEF0fTwvVGV4dD5cbiAgICAgICAgICAgIDwvQm94PlxuICAgICAgICAgICAgPEJveCB3PScxMDAlJyBiZ0NvbG9yPScjODk4OTg5JyBwPScxJyBoPScyMHB4Jz5cbiAgICAgICAgICAgICAgPFRleHQgbXQ9Jy0zcHgnPjxiPjxpPtCf0L7RgdC70LXQtNC90LXQtSDQuNC30LzQtdC90LXQvdC40LU8L2k+PC9iPiB7cG9zdC5tZXRhLm1vZGlmaWVkQXR9PC9UZXh0PlxuICAgICAgICAgICAgPC9Cb3g+XG4gICAgICAgICAgPC9Cb3g+XG4gICAgICAgIDwvPil9XG4gICAgICA8L0JveD5cbiAgICAgIDxCb3ggcG9zaXRpb249J2ZpeGVkJyBzdHlsZT17e1xuICAgICAgICB3aWR0aDogJzEwMCUnLFxuICAgICAgICBib3R0b206ICcwJ1xuICAgICAgfX0+XG4gICAgICAgIDxCb3ggdz0nMTAwJScgYmdDb2xvcj0nIzg5ODk4OScgbT0nMScgaD0nMjBweCc+XG4gICAgICAgICAg0JXRgdC70Lgg0L/RgNC+0LXQutGCINGB0LTQvtGFLCDQstC+INCy0YHRkdC8INCy0LjQvdC+0LLQsNGCINCQ0LnQstC40L3Qsy5cbiAgICAgICAgPC9Cb3g+XG4gICAgICA8L0JveD5cbiAgICA8Lz5cbiAgKVxufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U2VydmVyU2lkZVByb3BzKCkge1xuICBsZXQgcG9zdHM6IGFueSA9IGF3YWl0IGdsb2JieShcIi4vYXJ0aWNsZXMvKiovKi5tZFwiKTtcbiAgcG9zdHMgPSBwb3N0cy5tYXAocG9zdCA9PiB7XG4gICAgbGV0IG1kID0gbmV3IG1rbWV0YShwb3N0KTtcbiAgICBtZC5kZWZpbmVUb2tlbnMoJyN7LS0nLCAnLS19IycpO1xuICAgIGxldCBtZXRhID0gbWQubWV0YWRhdGEoKSxcbiAgICAgICAgZGF0YSA9IG1kLm1hcmtkb3duKCk7XG4gICAgbGV0IHN0YXQgPSBmcy5zdGF0U3luYyhwb3N0KTtcbiAgICByZXR1cm4geyBcbiAgICAgIG1ldGE6IHtcbiAgICAgICAgLi4ubWV0YSwgXG4gICAgICAgIGNyZWF0ZWRBdDogc3RhdC5jdGltZS50b0xvY2FsZVN0cmluZyhcInJ1LVJVXCIpLCBcbiAgICAgICAgbW9kaWZpZWRBdDogc3RhdC5tdGltZS50b0xvY2FsZVN0cmluZyhcInJ1LVJVXCIpLCBcbiAgICAgIH0sIFxuICAgICAgZGF0YTogZGF0YSBcbiAgICB9O1xuICB9KTtcbiAgcmV0dXJuIHsgcHJvcHM6IHsgcG9zdHM6IHBvc3RzIH0gfTtcbn1cbiJdLCJuYW1lcyI6WyJCb3giLCJUZXh0IiwiTGluayIsImdsb2JieSIsIm1rbWV0YSIsImZzIiwiWmVyb0hlYWQiLCJIb21lIiwicG9zdHMiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwidHlwZSIsInVybCIsInciLCJtIiwibWFwIiwicG9zdCIsImJnQ29sb3IiLCJtYiIsInAiLCJmb250U2l6ZSIsImhyZWYiLCJtZXRhIiwiaWQiLCJoIiwibXQiLCJzdWJ0aXRsZSIsImIiLCJpIiwiYXV0aG9yIiwiY3JlYXRlZEF0IiwibW9kaWZpZWRBdCIsInBvc2l0aW9uIiwic3R5bGUiLCJ3aWR0aCIsImJvdHRvbSIsImdldFNlcnZlclNpZGVQcm9wcyIsIm1kIiwiZGVmaW5lVG9rZW5zIiwibWV0YWRhdGEiLCJkYXRhIiwibWFya2Rvd24iLCJzdGF0Iiwic3RhdFN5bmMiLCJjdGltZSIsInRvTG9jYWxlU3RyaW5nIiwibXRpbWUiLCJwcm9wcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/index.tsx\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Home),
+/* harmony export */   "getServerSideProps": () => (/* binding */ getServerSideProps)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(930);
+/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var globby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(702);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(147);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var markdown_it_meta__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(351);
+/* harmony import */ var markdown_it_meta__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(markdown_it_meta__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var markdown_it_attrs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28);
+/* harmony import */ var markdown_it_attrs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(markdown_it_attrs__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_ZeroHead__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(570);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([globby__WEBPACK_IMPORTED_MODULE_2__]);
+globby__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+
+
+const md = __webpack_require__(653)({
+    html: true,
+    xhtmlOut: true,
+    breaks: true,
+    langPrefix: 'l-',
+    linkify: true,
+    typographer: true,
+    quotes: '“”‘’'
+});
+md.use((markdown_it_meta__WEBPACK_IMPORTED_MODULE_4___default()));
+md.use((markdown_it_attrs__WEBPACK_IMPORTED_MODULE_5___default()));
+
+function Home({ posts  }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ZeroHead__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+                title: "zer\xf8net",
+                description: "\xd8",
+                type: "website",
+                url: "https://zeronet.space/"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                position: "relative",
+                w: "100%",
+                m: "0",
+                children: posts.map((post)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                            position: "relative",
+                            w: "100%",
+                            bgColor: "#979797",
+                            mb: "1",
+                            children: [
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                                    w: "100%",
+                                    bgColor: "#989898",
+                                    p: "1",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                            fontSize: "md",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
+                                                href: `/post/${post.meta.id}`,
+                                                children: post.meta.title
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                                            w: "100%",
+                                            bgColor: "#898989",
+                                            p: "1",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                                mt: "-3px",
+                                                children: post.meta.subtitle || /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                        children: "Подзаголовок не указан..."
+                                                    })
+                                                })
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                                    w: "100%",
+                                    bgColor: "#898989",
+                                    p: "1",
+                                    h: "20px",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        mt: "-3px",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    children: "Автор статьи"
+                                                })
+                                            }),
+                                            " ",
+                                            post.meta.author
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                                    w: "100%",
+                                    bgColor: "#898989",
+                                    p: "1",
+                                    h: "20px",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        mt: "-3px",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    children: "Статья опубликована"
+                                                })
+                                            }),
+                                            " ",
+                                            post.meta.createdAt
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                                    w: "100%",
+                                    bgColor: "#898989",
+                                    p: "1",
+                                    h: "20px",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        mt: "-3px",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    children: "Последнее изменение"
+                                                })
+                                            }),
+                                            " ",
+                                            post.meta.modifiedAt
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                )
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                position: "sticky",
+                style: {
+                    width: '100%',
+                    bottom: '0'
+                },
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
+                    w: "100%",
+                    bgColor: "#898989",
+                    p: "1px",
+                    pl: "5px",
+                    h: "20px",
+                    children: [
+                        "Авторское право \xa9 2021-",
+                        new Date().getFullYear(),
+                        ". Нихуя не защищено :KekW:"
+                    ]
+                })
+            })
+        ]
+    });
+};
+async function getServerSideProps() {
+    let posts = (await (0,globby__WEBPACK_IMPORTED_MODULE_2__.globby)("./articles/**/*.md")).map((post)=>{
+        let document = md.render(fs__WEBPACK_IMPORTED_MODULE_3___default().readFileSync(post, "utf-8").toString());
+        let stat = fs__WEBPACK_IMPORTED_MODULE_3___default().statSync(post);
+        return {
+            meta: {
+                ...md.meta,
+                createdAt: stat.ctime.toLocaleString("ru-RU"),
+                modifiedAt: stat.mtime.toLocaleString("ru-RU")
+            },
+            data: document
+        };
+    });
+    return {
+        props: {
+            posts: posts
+        }
+    };
+}
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "@chakra-ui/react":
-/*!***********************************!*\
-  !*** external "@chakra-ui/react" ***!
-  \***********************************/
+/***/ 930:
 /***/ ((module) => {
 
 module.exports = require("@chakra-ui/react");
 
 /***/ }),
 
-/***/ "marked-metadata":
-/*!**********************************!*\
-  !*** external "marked-metadata" ***!
-  \**********************************/
+/***/ 653:
 /***/ ((module) => {
 
-module.exports = require("marked-metadata");
+module.exports = require("markdown-it");
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ 28:
+/***/ ((module) => {
+
+module.exports = require("markdown-it-attrs");
+
+/***/ }),
+
+/***/ 351:
+/***/ ((module) => {
+
+module.exports = require("markdown-it-meta");
+
+/***/ }),
+
+/***/ 968:
 /***/ ((module) => {
 
 module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ "globby":
-/*!*************************!*\
-  !*** external "globby" ***!
-  \*************************/
+/***/ 702:
 /***/ ((module) => {
 
 module.exports = import("globby");;
 
 /***/ }),
 
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
+/***/ 147:
 /***/ ((module) => {
 
 module.exports = require("fs");
@@ -100,7 +262,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/index.tsx"));
+var __webpack_exports__ = __webpack_require__.X(0, [570], () => (__webpack_exec__(186)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,7 +1,7 @@
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import type { AppProps } from "next/app"
+import Head from "next/head"
 
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import { 
   ChakraProvider,
   Drawer,
@@ -16,44 +16,44 @@ import {
   Text,
   useColorModeValue,
   useDisclosure,
-} from '@chakra-ui/react'
-import { Icon } from '@iconify/react'
-import { ColorModeScript } from '@chakra-ui/react'
+} from "@chakra-ui/react"
+import { Icon } from "@iconify/react"
+import { ColorModeScript } from "@chakra-ui/react"
 
-import '../styles/globals.scss'
-import theme from '../zeronet.theme'
+import "../styles/globals.scss"
+import theme from "../zeronet.theme"
 
 const LinkItems = [
-  { name: 'Главная', icon: 'fluent:home-12-filled', url: '/' },
-  { name: 'Пастбин', icon: 'fluent:notebook-add-24-filled', url: '//paste.zeronet.space' },
+  { name: "Главная", icon: "fluent:home-12-filled", url: "/" },
+  { name: "Пастбин", icon: "fluent:notebook-add-24-filled", url: "//paste.zeronet.space" },
 ];
 
 function SimpleSidebar({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <SidebarContent onClose={() => onClose} display={{ base: 'none' }} />
+      <SidebarContent onClose={() => onClose} display={{ base: "none" }} />
       <Drawer
         autoFocus={false}
         isOpen={isOpen}
-        placement='left'
+        placement="left"
         onClose={onClose}
         returnFocusOnClose={false}
         onOverlayClick={onClose}
-        size='full'>
+        size="full">
         <DrawerContent>
           <SidebarContent onClose={onClose} />
         </DrawerContent>
       </Drawer>
       <Icon 
-        color='black'
-        height='24' 
-        width='24' 
-        icon='ep:menu' 
+        color="black"
+        height="24" 
+        width="24" 
+        icon="ep:menu" 
         onClick={onOpen} 
-        cursor='pointer' 
+        cursor="pointer" 
         style={{
-          marginTop: '-12px'
+          marginTop: "-12px"
         }}
       />
     </Box>
@@ -63,33 +63,33 @@ function SimpleSidebar({ children }) {
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
     <Box
-      bg={useColorModeValue('#999999b8','#737373')}
-      borderRight='1px'
-      borderRightColor={useColorModeValue('#999999b8','#737373')}
-      w={{ base: 'full' }}
-      pos='fixed'
-      h='full'
+      bg={useColorModeValue("#999999b8","#737373")}
+      borderRight="1px"
+      borderRightColor={useColorModeValue("#999999b8","#737373")}
+      w={{ base: "full" }}
+      pos="fixed"
+      h="full"
       style={{
-        overflowY: 'scroll'
+        overflowY: "scroll"
       }} 
       {...rest}>
       <Flex>
-        <Box w='100%'>
-          <Center bg='#999999' h='25px'>
-            <Text fontSize='md'>Меню</Text>
+        <Box w="100%">
+          <Center bg="#999999" h="25px">
+            <Text fontSize="md">Меню</Text>
           </Center>
         </Box>
         <Spacer />
-        <Box p='3' h='25px' bg='#999999'>
-          <Center bg='#999999' h='2px'>
+        <Box p="3" h="25px" bg="#999999">
+          <Center bg="#999999" h="2px">
             <Icon 
-              height='21' 
-              width='21' 
-              icon='fa:close' 
+              height="21" 
+              width="21" 
+              icon="fa:close" 
               onClick={onClose} 
-              cursor='pointer'
+              cursor="pointer"
               style={{
-                marginTop: '-4px'
+                marginTop: "-4px"
               }}
             />
           </Center>
@@ -106,16 +106,16 @@ const SidebarContent = ({ onClose, ...rest }) => {
 
 const NavItem = ({ icon, url, children, ...rest }) => {
   return (
-    <Link fontFamily='verdana' href={url} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <Link fontFamily="verdana" href={url} style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
       <Flex
-        align='center' p='1' role='group' cursor='pointer'w='100%'
-        _hover={{bg: '#737373', color: 'white'}} fontSize='13px' {...rest}>
-        <Text whiteSpace='nowrap' paddingRight='5px' textDecoration='underline'>{children}{'\t'}</Text>
-        <Divider variant='dashed' orientation='horizontal' />
+        align="center" p="1" role="group" cursor="pointer"w="100%"
+        _hover={{bg: "#737373", color: "white"}} fontSize="13px" {...rest}>
+        <Text whiteSpace="nowrap" paddingRight="5px" textDecoration="underline">{children}{"\t"}</Text>
+        <Divider variant="dashed" orientation="horizontal" />
         {icon && (
-          <Icon icon={icon} height='24' width='24' style={{
-            minHeight: '24px',
-            minWidth: '24px'
+          <Icon icon={icon} height="24" width="24" style={{
+            minHeight: "24px",
+            minWidth: "24px"
           }} />
         )}
       </Flex>
@@ -131,6 +131,7 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
 
   return <>
     <Head>
+      <meta charSet="UTF-8" />
       <meta 
         property="og:image" 
         content="/android-chrome-48x48.png" 
@@ -201,27 +202,51 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
         name="google" 
         content="notranslate" 
       />
+      <meta 
+        name="apple-mobile-web-app-capable" 
+        content="yes" 
+      />
+      <meta 
+        name="apple-mobile-web-app-status-bar-style" 
+        content="default" 
+      />
+      <meta 
+        name="format-detection" 
+        content="telephone=no" 
+      />
+      <meta 
+        name="mobile-web-app-capable" 
+        content="yes" 
+      />
+      <meta 
+        name="msapplication-config" 
+        content="/browserconfig.xml" 
+      />
+      <meta 
+        name="msapplication-tap-highlight" 
+        content="no" 
+      />
     </Head>
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Flex>
-        <Box w='100%'>
-          <Text position='absolute' fontSize='md' bgColor='#757575' h='25px' w='25px'>
+        <Box w="100%">
+          <Text position="absolute" fontSize="md" bgColor="#757575" h="25px" w="25px">
             <Image 
-              src='/android-chrome-36x36.png' 
-              h='16px' 
-              w='16px' 
-              mt='4px'
-              ml='4px' 
-              alt='zeronet logo'
+              src="/android-chrome-36x36.png" 
+              h="16px" 
+              w="16px" 
+              mt="4px"
+              ml="4px" 
+              alt="zeronet logo"
             />
           </Text>
-          <Center bg='#999999' h='25px'>
-            <Text fontSize='md' mr='-48px'>Блог Айокса</Text>
+          <Center bg="#999999" h="25px">
+            <Text fontSize="md" mr="-48px">Блог Айокса</Text>
           </Center>
         </Box>
         <Spacer />
-        <Box p='3' h='25px' bg='#999999' color='white'>
+        <Box p="3" h="25px" bg="#999999" color="white">
           <SimpleSidebar><></></SimpleSidebar>
         </Box>
       </Flex>

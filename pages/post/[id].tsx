@@ -2,10 +2,65 @@ import React, { useRef, useEffect, useState } from 'react';
 
 import { 
   Text,
-  Box,
+  Box
 } from '@chakra-ui/react'
 import { globby } from 'globby'
-import mkmeta from 'marked-metadata'
+
+import md_hljs from 'highlight.js'
+import md_meta from 'markdown-it-meta'
+import md_anchor from 'markdown-it-anchor'
+import md_toc from 'markdown-it-table-of-contents'
+import md_attrs from 'markdown-it-attrs'
+import md_table from 'markdown-it-multimd-table'
+import md_wikilinks from 'markdown-it-wikilinks'
+import { html5Media } from 'markdown-it-html5-media'
+import md_abbr from 'markdown-it-abbr'
+import md_comment from 'markdown-it-inline-comments'
+import md_footnote from 'markdown-it-footnote'
+
+const md = require('markdown-it')({
+  html: true,
+  xhtmlOut: true,
+  breaks: true,
+  langPrefix: 'l-',
+  linkify: true,
+  typographer: true,
+  quotes: '“”‘’',
+  highlight: function (str, lang) {
+    if (lang && md_hljs.getLanguage(lang)) {
+      try {
+        return (
+          <pre className="hljs"><code>
+            {md_hljs.highlight(str, { 
+              language: lang, 
+              ignoreIllegals: true 
+            }).value}
+          </code></pre>
+        );
+      } catch (__) {}
+    }
+
+    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+  }
+})
+  .use(md_meta)
+  .use(md_anchor)
+  .use(md_toc, {
+    includeLevel: [1, 2, 3],
+    listType: 'ol'
+  })
+  .use(md_attrs)
+  .use(md_table)
+  .use(md_wikilinks({}))
+  .use(html5Media)
+  .use(md_abbr, {
+    "HTML": "Hyper Text Markup Language",
+    "W3C": "World Wide Web Consortium"
+  })
+  .use(md_comment)
+  .use(md_footnote);
+md.linkify.set({ fuzzyEmail: false });
+
 import fs from 'fs'
 
 import PageTitle from '../../components/PageTitle'
@@ -32,7 +87,7 @@ export default function PostPage({ post }) {
       />
       <PageTitle title={post.meta.title} />
       <PageSubTitle title={post.meta.subtitle || <b><i>Подзаголовок не указан...</i></b>} />
-      <Box position='relative' w='100%' p='2' fontSize='16px' ref={rawRef} />
+      <Box position='relative' mb='60px' w='100%' p='2' fontSize='16px' ref={rawRef} />
       <Box position='fixed' style={{
         width: '100%',
         bottom: '0'
@@ -54,26 +109,22 @@ export default function PostPage({ post }) {
 export async function getServerSideProps(context) {
   let { id } = context.query;
 
-  let posts = await globby("./articles/**/*.md");
-  let post = posts.map(post => {
-    let md = new mkmeta(post);
-    md.defineTokens('#{--', '--}#');
-    let meta = md.metadata(),
-        data = md.markdown();
-    if(meta.id == id) {
+  let posts = (await globby("./articles/**/*.md")).map(post => {
+    let document = md.render(fs.readFileSync(post, "utf-8").toString());
+    if(md.meta.id === parseInt(id)) {
       let stat = fs.statSync(post);
       return { 
         meta: {
-          ...meta, 
+          ...md.meta, 
           createdAt: stat.ctime.toLocaleString("ru-RU"), 
           modifiedAt: stat.mtime.toLocaleString("ru-RU"), 
-        }, 
-        data: data 
+        },
+        data: document,
       };
-    } else {
-      return;
-    }
-  })[0];
+    };
+  });
+
+  let post = posts.filter(post => post !== undefined && post.meta.id === parseInt(id))[0];
 
   return { props: { post: post } };
 }
