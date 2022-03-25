@@ -18,6 +18,7 @@ import md_abbr from 'markdown-it-abbr'
 import md_comment from 'markdown-it-inline-comments'
 import md_footnote from 'markdown-it-footnote'
 import md_ghtasks from 'markdown-it-task-lists'
+import md_kbd from 'markdown-it-kbd'
 
 const md = require('markdown-it')({
   html: true,
@@ -60,7 +61,8 @@ const md = require('markdown-it')({
   })
   .use(md_comment)
   .use(md_footnote)
-  .use(md_ghtasks, {enabled: true});
+  .use(md_ghtasks, {enabled: true})
+  .use(md_kbd);
 md.linkify.set({ fuzzyEmail: false });
 
 import fs from 'fs'

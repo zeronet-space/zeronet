@@ -103,13 +103,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var markdown_it_inline_comments__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(markdown_it_inline_comments__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var markdown_it_footnote__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(484);
 /* harmony import */ var markdown_it_footnote__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(markdown_it_footnote__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(147);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(866);
-/* harmony import */ var _components_PageSubTitle__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(304);
-/* harmony import */ var _components_ZeroHead__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(570);
+/* harmony import */ var markdown_it_task_lists__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(687);
+/* harmony import */ var markdown_it_task_lists__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(markdown_it_task_lists__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(147);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(866);
+/* harmony import */ var _components_PageSubTitle__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(304);
+/* harmony import */ var _components_ZeroHead__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(570);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([globby__WEBPACK_IMPORTED_MODULE_3__, highlight_js__WEBPACK_IMPORTED_MODULE_4__]);
 ([globby__WEBPACK_IMPORTED_MODULE_3__, highlight_js__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
 
 
 
@@ -159,7 +162,9 @@ const md = __webpack_require__(653)({
 }).use((markdown_it_attrs__WEBPACK_IMPORTED_MODULE_8___default())).use((markdown_it_multimd_table__WEBPACK_IMPORTED_MODULE_9___default())).use(markdown_it_wikilinks__WEBPACK_IMPORTED_MODULE_10___default()({})).use(markdown_it_html5_media__WEBPACK_IMPORTED_MODULE_11__.html5Media).use((markdown_it_abbr__WEBPACK_IMPORTED_MODULE_12___default()), {
     "HTML": "Hyper Text Markup Language",
     "W3C": "World Wide Web Consortium"
-}).use((markdown_it_inline_comments__WEBPACK_IMPORTED_MODULE_13___default())).use((markdown_it_footnote__WEBPACK_IMPORTED_MODULE_14___default()));
+}).use((markdown_it_inline_comments__WEBPACK_IMPORTED_MODULE_13___default())).use((markdown_it_footnote__WEBPACK_IMPORTED_MODULE_14___default())).use((markdown_it_task_lists__WEBPACK_IMPORTED_MODULE_15___default()), {
+    enabled: true
+});
 md.linkify.set({
     fuzzyEmail: false
 });
@@ -180,16 +185,16 @@ function PostPage({ post  }) {
     ]);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ZeroHead__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ZeroHead__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Z, {
                 title: `zerønet — ${post.meta.title}`,
                 description: post.meta.subtitle,
                 type: "article",
                 url: `https://zeronet.space/post/${post.meta.id}`
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_PageTitle__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_PageTitle__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Z, {
                 title: post.meta.title
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_PageSubTitle__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_PageSubTitle__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Z, {
                 title: post.meta.subtitle || /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                         children: "Подзаголовок не указан..."
@@ -273,9 +278,9 @@ function PostPage({ post  }) {
 async function getServerSideProps(context) {
     let { id  } = context.query;
     let posts = (await (0,globby__WEBPACK_IMPORTED_MODULE_3__.globby)("./articles/**/*.md")).map((post)=>{
-        let document = md.render(fs__WEBPACK_IMPORTED_MODULE_15___default().readFileSync(post, "utf-8").toString());
+        let document = md.render(fs__WEBPACK_IMPORTED_MODULE_16___default().readFileSync(post, "utf-8").toString());
         if (md.meta.id === parseInt(id)) {
-            let stat = fs__WEBPACK_IMPORTED_MODULE_15___default().statSync(post);
+            let stat = fs__WEBPACK_IMPORTED_MODULE_16___default().statSync(post);
             return {
                 meta: {
                     ...md.meta,
@@ -374,6 +379,13 @@ module.exports = require("markdown-it-multimd-table");
 /***/ ((module) => {
 
 module.exports = require("markdown-it-table-of-contents");
+
+/***/ }),
+
+/***/ 687:
+/***/ ((module) => {
+
+module.exports = require("markdown-it-task-lists");
 
 /***/ }),
 
