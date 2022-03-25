@@ -19,6 +19,9 @@ import md_comment from 'markdown-it-inline-comments'
 import md_footnote from 'markdown-it-footnote'
 import md_ghtasks from 'markdown-it-task-lists'
 import md_kbd from 'markdown-it-kbd'
+import md_emoji from 'markdown-it-emoji'
+
+import twemoji from 'twemoji'
 
 const md = require('markdown-it')({
   html: true,
@@ -61,9 +64,13 @@ const md = require('markdown-it')({
   })
   .use(md_comment)
   .use(md_footnote)
-  .use(md_ghtasks, {enabled: true})
-  .use(md_kbd);
+  .use(md_ghtasks, {enabled: false})
+  .use(md_kbd)
+  .use(md_emoji);
 md.linkify.set({ fuzzyEmail: false });
+md.renderer.rules.emoji = function(token, idx) {
+  return twemoji.parse(token[idx].content);
+};
 
 import fs from 'fs'
 

@@ -27,7 +27,6 @@ testing:
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
-[[x]]
 
 Here is a footnote reference,[^1] and another.[^longnote]
 
