@@ -231,7 +231,7 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Flex>
         <Box w="100%">
-          <Text position="absolute" fontSize="md" bgColor="#757575" h="25px" w="25px">
+          <Link outline="none" href="/" position="absolute" fontSize="md" bgColor="#757575" h="25px" w="25px">
             <Image 
               src="/android-chrome-36x36.png" 
               h="16px" 
@@ -240,7 +240,7 @@ export default function ZeroApp({ Component, pageProps }: AppProps) {
               ml="4px" 
               alt="zeronet logo"
             />
-          </Text>
+          </Link>
           <Center bg="#999999" h="25px">
             <Text fontSize="md" mr="-48px">Блог Айокса</Text>
           </Center>

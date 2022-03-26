@@ -57,7 +57,7 @@ export default function Home({ posts }) {
           </Box>
         </>)}
       </Box>
-      <Box position='sticky' style={{
+      <Box position='fixed' style={{
         width: '100%',
         bottom: '0'
       }}>

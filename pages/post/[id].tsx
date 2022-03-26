@@ -122,7 +122,7 @@ export async function getServerSideProps(context) {
 
   let posts = (await globby("./articles/**/*.md")).map(post => {
     let document = md.render(fs.readFileSync(post, "utf-8").toString());
-    if(md.meta.id === parseInt(id)) {
+    if(md.meta.id.toString() === id) {
       let stat = fs.statSync(post);
       return { 
         meta: {
@@ -135,7 +135,7 @@ export async function getServerSideProps(context) {
     };
   });
 
-  let post = posts.filter(post => post !== undefined && post.meta.id === parseInt(id))[0];
+  let post = posts.filter(post => post !== undefined && post.meta.id.toString() === id)[0];
 
   return { props: { post: post } };
 }
