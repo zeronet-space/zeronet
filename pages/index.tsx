@@ -4,6 +4,7 @@ import {
   Link 
 } from '@chakra-ui/react'
 import { globby } from 'globby'
+import { spawnSync } from 'child_process'
 
 import fs from 'fs'
 
@@ -27,7 +28,7 @@ import theme from '../zeronet.theme'
 import styles from '../styles/Home.module.scss'
 import ZeroHead from '../components/ZeroHead'
 
-export default function Home({ posts }) {
+export default function Home({ posts, build_id }) {
   return (
     <>
       <ZeroHead
@@ -61,8 +62,11 @@ export default function Home({ posts }) {
         width: '100%',
         bottom: '0'
       }}>
-        <Box w='100%' bgColor='#898989' p='1px' pl='5px' h='20px'>
-          Авторское право &copy; 2021-{new Date().getFullYear()}. Нихуя не защищено :KekW:
+        <Box w='100%' bgColor='#898989' p='1px' pl='5px'>
+          <Text>
+            Авторское право &copy; 2021-{new Date().getFullYear()}. Нихуя не защищено :KekW <br></br>
+            Идентификатор сборки <br>#{build_id}</br>
+          </Text>
         </Box>
       </Box>
     </>
@@ -83,5 +87,7 @@ export async function getServerSideProps() {
       data: document,
     };
   });
-  return { props: { posts: posts } };
+  let build_id = spawnSync('git', ['rev-parse', 'HEAD']).stdout.toString().slice(0, 8);
+
+  return { props: { posts: posts, build_id: build_id } };
 }

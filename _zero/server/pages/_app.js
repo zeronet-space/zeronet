@@ -1,442 +1,111 @@
-"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 847:
+/***/ "./pages/_app.tsx":
+/*!************************!*\
+  !*** ./pages/_app.tsx ***!
+  \************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ZeroApp)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(968);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(930);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _iconify_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(566);
-/* harmony import */ var _zeronet_theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(904);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_iconify_react__WEBPACK_IMPORTED_MODULE_4__]);
-_iconify_react__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-
-
-
-
-
-const LinkItems = [
-    {
-        name: "Главная",
-        icon: "fluent:home-12-filled",
-        url: "/"
-    },
-    {
-        name: "Пастбин",
-        icon: "fluent:notebook-add-24-filled",
-        url: "//paste.zeronet.space"
-    }, 
-];
-function SimpleSidebar({ children  }) {
-    const { isOpen , onOpen , onClose  } = (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useDisclosure)();
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SidebarContent, {
-                onClose: ()=>onClose
-                ,
-                display: {
-                    base: "none"
-                }
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Drawer, {
-                autoFocus: false,
-                isOpen: isOpen,
-                placement: "left",
-                onClose: onClose,
-                returnFocusOnClose: false,
-                onOverlayClick: onClose,
-                size: "full",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.DrawerContent, {
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SidebarContent, {
-                        onClose: onClose
-                    })
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {
-                color: "black",
-                height: "24",
-                width: "24",
-                icon: "ep:menu",
-                onClick: onOpen,
-                cursor: "pointer",
-                style: {
-                    marginTop: "-12px"
-                }
-            })
-        ]
-    });
-}
-const SidebarContent = ({ onClose , ...rest })=>{
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-        bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useColorModeValue)("#999999b8", "#737373"),
-        borderRight: "1px",
-        borderRightColor: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useColorModeValue)("#999999b8", "#737373"),
-        w: {
-            base: "full"
-        },
-        pos: "fixed",
-        h: "full",
-        style: {
-            overflowY: "scroll"
-        },
-        ...rest,
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-                        w: "100%",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {
-                            bg: "#999999",
-                            h: "25px",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {
-                                fontSize: "md",
-                                children: "Меню"
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Spacer, {}),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-                        p: "3",
-                        h: "25px",
-                        bg: "#999999",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {
-                            bg: "#999999",
-                            h: "2px",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {
-                                height: "21",
-                                width: "21",
-                                icon: "fa:close",
-                                onClick: onClose,
-                                cursor: "pointer",
-                                style: {
-                                    marginTop: "-4px"
-                                }
-                            })
-                        })
-                    })
-                ]
-            }),
-            LinkItems.map((link)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(NavItem, {
-                    icon: link.icon,
-                    url: link.url,
-                    children: link.name
-                }, link.name)
-            )
-        ]
-    });
-};
-const NavItem = ({ icon , url , children , ...rest })=>{
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
-        fontFamily: "verdana",
-        href: url,
-        style: {
-            textDecoration: "none"
-        },
-        _focus: {
-            boxShadow: "none"
-        },
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {
-            align: "center",
-            p: "1",
-            role: "group",
-            cursor: "pointer",
-            w: "100%",
-            _hover: {
-                bg: "#737373",
-                color: "white"
-            },
-            fontSize: "13px",
-            ...rest,
-            children: [
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {
-                    whiteSpace: "nowrap",
-                    paddingRight: "5px",
-                    textDecoration: "underline",
-                    children: [
-                        children,
-                        "\t"
-                    ]
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Divider, {
-                    variant: "dashed",
-                    orientation: "horizontal"
-                }),
-                icon && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {
-                    icon: icon,
-                    height: "24",
-                    width: "24",
-                    style: {
-                        minHeight: "24px",
-                        minWidth: "24px"
-                    }
-                })
-            ]
-        })
-    });
-};
-function ZeroApp({ Component , pageProps  }) {
-    const { 0: isMenuOpen , 1: setMenu  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
-    const handleMenu = ()=>{
-        setMenu((prevState)=>!prevState
-        );
-    };
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        charSet: "UTF-8"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        property: "og:image",
-                        content: "/android-chrome-48x48.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "apple-touch-icon",
-                        sizes: "180x180",
-                        href: "/apple-touch-icon.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "icon",
-                        type: "image/png",
-                        sizes: "32x32",
-                        href: "/favicon-32x32.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "icon",
-                        type: "image/png",
-                        sizes: "16x16",
-                        href: "/favicon-16x16.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "manifest",
-                        href: "/manifest.json"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "mask-icon",
-                        href: "/safari-pinned-tab.svg",
-                        color: "#5bbad5"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        property: "twitter:card",
-                        content: "summary"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        property: "twitter:image",
-                        content: "/android-chrome-48x48.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "msapplication-TileColor",
-                        content: "#603cba"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "msapplication-TileImage",
-                        content: "/mstile-144x144.png"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "theme-color",
-                        content: "#222233"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        httpEquiv: "X-UA-Compatible",
-                        content: "IE=Edge"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        httpEquiv: "Content-Type",
-                        content: "text/html, charset=UTF-8"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "referrer",
-                        content: "strict-origin-when-cross-origin"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "viewport",
-                        content: "width=device-width, initial-scale=1"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "google",
-                        content: "notranslate"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "apple-mobile-web-app-capable",
-                        content: "yes"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "apple-mobile-web-app-status-bar-style",
-                        content: "default"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "format-detection",
-                        content: "telephone=no"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "mobile-web-app-capable",
-                        content: "yes"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "msapplication-config",
-                        content: "/browserconfig.xml"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "msapplication-tap-highlight",
-                        content: "no"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.ChakraProvider, {
-                theme: _zeronet_theme__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z,
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.ColorModeScript, {
-                        initialColorMode: _zeronet_theme__WEBPACK_IMPORTED_MODULE_5__/* ["default"].config.initialColorMode */ .Z.config.initialColorMode
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-                                w: "100%",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Link, {
-                                        outline: "none",
-                                        href: "/",
-                                        position: "absolute",
-                                        fontSize: "md",
-                                        bgColor: "#757575",
-                                        h: "25px",
-                                        w: "25px",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Image, {
-                                            src: "/android-chrome-36x36.png",
-                                            h: "16px",
-                                            w: "16px",
-                                            mt: "4px",
-                                            ml: "4px",
-                                            alt: "zeronet logo"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {
-                                        bg: "#999999",
-                                        h: "25px",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {
-                                            fontSize: "md",
-                                            mr: "-48px",
-                                            children: "Блог Айокса"
-                                        })
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Spacer, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {
-                                p: "3",
-                                h: "25px",
-                                bg: "#999999",
-                                color: "white",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(SimpleSidebar, {
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {})
-                                })
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-                        ...pageProps
-                    })
-                ]
-            })
-        ]
-    });
-};
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ZeroApp)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _iconify_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @iconify/react */ \"@iconify/react\");\n/* harmony import */ var _styles_globals_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/globals.scss */ \"./styles/globals.scss\");\n/* harmony import */ var _styles_globals_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _zeronet_theme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../zeronet.theme */ \"./zeronet.theme.ts\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_iconify_react__WEBPACK_IMPORTED_MODULE_4__]);\n_iconify_react__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\n\n\nconst LinkItems = [\n    {\n        name: \"Главная\",\n        icon: \"fluent:home-12-filled\",\n        url: \"/\"\n    },\n    {\n        name: \"Пастбин\",\n        icon: \"fluent:notebook-add-24-filled\",\n        url: \"//paste.zeronet.space\"\n    }, \n];\nfunction SimpleSidebar({ children  }) {\n    const { isOpen , onOpen , onClose  } = (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useDisclosure)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SidebarContent, {\n                onClose: ()=>onClose\n                ,\n                display: {\n                    base: \"none\"\n                }\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 35,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Drawer, {\n                autoFocus: false,\n                isOpen: isOpen,\n                placement: \"left\",\n                onClose: onClose,\n                returnFocusOnClose: false,\n                onOverlayClick: onClose,\n                size: \"full\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.DrawerContent, {\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SidebarContent, {\n                        onClose: onClose\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 45,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                    lineNumber: 44,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 36,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {\n                color: \"black\",\n                height: \"24\",\n                width: \"24\",\n                icon: \"ep:menu\",\n                onClick: onOpen,\n                cursor: \"pointer\",\n                style: {\n                    marginTop: \"-12px\"\n                }\n            }, void 0, false, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 48,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n        lineNumber: 34,\n        columnNumber: 5\n    }, this);\n}\nconst SidebarContent = ({ onClose , ...rest })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n        bg: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useColorModeValue)(\"#999999b8\", \"#737373\"),\n        borderRight: \"1px\",\n        borderRightColor: (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.useColorModeValue)(\"#999999b8\", \"#737373\"),\n        w: {\n            base: \"full\"\n        },\n        pos: \"fixed\",\n        h: \"full\",\n        style: {\n            overflowY: \"scroll\"\n        },\n        ...rest,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n                        w: \"100%\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {\n                            bg: \"#999999\",\n                            h: \"25px\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {\n                                fontSize: \"md\",\n                                children: \"Меню\"\n                            }, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                lineNumber: 79,\n                                columnNumber: 13\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                            lineNumber: 78,\n                            columnNumber: 11\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 77,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Spacer, {}, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 82,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n                        p: \"3\",\n                        h: \"25px\",\n                        bg: \"#999999\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {\n                            bg: \"#999999\",\n                            h: \"2px\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {\n                                height: \"21\",\n                                width: \"21\",\n                                icon: \"fa:close\",\n                                onClick: onClose,\n                                cursor: \"pointer\",\n                                style: {\n                                    marginTop: \"-4px\"\n                                }\n                            }, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                lineNumber: 85,\n                                columnNumber: 13\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                            lineNumber: 84,\n                            columnNumber: 11\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 83,\n                        columnNumber: 9\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 76,\n                columnNumber: 7\n            }, undefined),\n            LinkItems.map((link)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(NavItem, {\n                    icon: link.icon,\n                    url: link.url,\n                    children: link.name\n                }, link.name, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                    lineNumber: 99,\n                    columnNumber: 9\n                }, undefined)\n            )\n        ]\n    }, void 0, true, {\n        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n        lineNumber: 65,\n        columnNumber: 5\n    }, undefined);\n};\nconst NavItem = ({ icon , url , children , ...rest })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Link, {\n        fontFamily: \"verdana\",\n        href: url,\n        style: {\n            textDecoration: \"none\"\n        },\n        _focus: {\n            boxShadow: \"none\"\n        },\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {\n            align: \"center\",\n            p: \"1\",\n            role: \"group\",\n            cursor: \"pointer\",\n            w: \"100%\",\n            _hover: {\n                bg: \"#737373\",\n                color: \"white\"\n            },\n            fontSize: \"13px\",\n            ...rest,\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {\n                    whiteSpace: \"nowrap\",\n                    paddingRight: \"5px\",\n                    textDecoration: \"underline\",\n                    children: [\n                        children,\n                        \"\\t\"\n                    ]\n                }, void 0, true, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                    lineNumber: 113,\n                    columnNumber: 9\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Divider, {\n                    variant: \"dashed\",\n                    orientation: \"horizontal\"\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                    lineNumber: 114,\n                    columnNumber: 9\n                }, undefined),\n                icon && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_iconify_react__WEBPACK_IMPORTED_MODULE_4__.Icon, {\n                    icon: icon,\n                    height: \"24\",\n                    width: \"24\",\n                    style: {\n                        minHeight: \"24px\",\n                        minWidth: \"24px\"\n                    }\n                }, void 0, false, {\n                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                    lineNumber: 116,\n                    columnNumber: 11\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n            lineNumber: 110,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n        lineNumber: 109,\n        columnNumber: 5\n    }, undefined);\n};\nfunction ZeroApp({ Component , pageProps  }) {\n    const { 0: isMenuOpen , 1: setMenu  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    const handleMenu = ()=>{\n        setMenu((prevState)=>!prevState\n        );\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        charSet: \"UTF-8\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 134,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        property: \"og:image\",\n                        content: \"/android-chrome-48x48.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 135,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"apple-touch-icon\",\n                        sizes: \"180x180\",\n                        href: \"/apple-touch-icon.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 139,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"icon\",\n                        type: \"image/png\",\n                        sizes: \"32x32\",\n                        href: \"/favicon-32x32.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 144,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"icon\",\n                        type: \"image/png\",\n                        sizes: \"16x16\",\n                        href: \"/favicon-16x16.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 150,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"manifest\",\n                        href: \"/manifest.json\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 156,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                        rel: \"mask-icon\",\n                        href: \"/safari-pinned-tab.svg\",\n                        color: \"#5bbad5\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 160,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        property: \"twitter:card\",\n                        content: \"summary\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 165,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        property: \"twitter:image\",\n                        content: \"/android-chrome-48x48.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 169,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"msapplication-TileColor\",\n                        content: \"#603cba\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 173,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"msapplication-TileImage\",\n                        content: \"/mstile-144x144.png\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 177,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"theme-color\",\n                        content: \"#222233\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 181,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        httpEquiv: \"X-UA-Compatible\",\n                        content: \"IE=Edge\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 185,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        httpEquiv: \"Content-Type\",\n                        content: \"text/html, charset=UTF-8\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 189,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"referrer\",\n                        content: \"strict-origin-when-cross-origin\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 193,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"viewport\",\n                        content: \"width=device-width, initial-scale=1\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 197,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"google\",\n                        content: \"notranslate\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 201,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"apple-mobile-web-app-capable\",\n                        content: \"yes\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 205,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"apple-mobile-web-app-status-bar-style\",\n                        content: \"default\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 209,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"format-detection\",\n                        content: \"telephone=no\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 213,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"mobile-web-app-capable\",\n                        content: \"yes\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 217,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"msapplication-config\",\n                        content: \"/browserconfig.xml\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 221,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                        name: \"msapplication-tap-highlight\",\n                        content: \"no\"\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 225,\n                        columnNumber: 7\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 133,\n                columnNumber: 5\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.ChakraProvider, {\n                theme: _zeronet_theme__WEBPACK_IMPORTED_MODULE_6__[\"default\"],\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.ColorModeScript, {\n                        initialColorMode: _zeronet_theme__WEBPACK_IMPORTED_MODULE_6__[\"default\"].config.initialColorMode\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 231,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Flex, {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n                                w: \"100%\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Link, {\n                                        outline: \"none\",\n                                        href: \"/\",\n                                        position: \"absolute\",\n                                        fontSize: \"md\",\n                                        bgColor: \"#757575\",\n                                        h: \"25px\",\n                                        w: \"25px\",\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Image, {\n                                            src: \"/android-chrome-36x36.png\",\n                                            h: \"16px\",\n                                            w: \"16px\",\n                                            mt: \"4px\",\n                                            ml: \"4px\",\n                                            alt: \"zeronet logo\"\n                                        }, void 0, false, {\n                                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                            lineNumber: 235,\n                                            columnNumber: 13\n                                        }, this)\n                                    }, void 0, false, {\n                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                        lineNumber: 234,\n                                        columnNumber: 11\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Center, {\n                                        bg: \"#999999\",\n                                        h: \"25px\",\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Text, {\n                                            fontSize: \"md\",\n                                            mr: \"-48px\",\n                                            children: \"Блог Айокса\"\n                                        }, void 0, false, {\n                                            fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                            lineNumber: 245,\n                                            columnNumber: 13\n                                        }, this)\n                                    }, void 0, false, {\n                                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                        lineNumber: 244,\n                                        columnNumber: 11\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                lineNumber: 233,\n                                columnNumber: 9\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Spacer, {}, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                lineNumber: 248,\n                                columnNumber: 9\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__.Box, {\n                                p: \"3\",\n                                h: \"25px\",\n                                bg: \"#999999\",\n                                color: \"white\",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(SimpleSidebar, {\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}, void 0, false)\n                                }, void 0, false, {\n                                    fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                    lineNumber: 250,\n                                    columnNumber: 11\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                                lineNumber: 249,\n                                columnNumber: 9\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 232,\n                        columnNumber: 7\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                        ...pageProps\n                    }, void 0, false, {\n                        fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                        lineNumber: 253,\n                        columnNumber: 7\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/var/www/i0x/data/www/zeronet.space/zeronet/pages/_app.tsx\",\n                lineNumber: 230,\n                columnNumber: 5\n            }, this)\n        ]\n    }, void 0, true);\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QyxFQUFFLEVBQUMsQ0FBUzt3Q0FBQ0ssQ0FBQyxFQUFDLENBQU07OEhBQzFCcEMsa0RBQUk7NENBQUNzQyxRQUFRLEVBQUMsQ0FBSTs0Q0FBQzJDLEVBQUUsRUFBQyxDQUFPO3NEQUFDLENBQVc7Ozs7Ozs7Ozs7Ozs7Ozs7O3dHQUc3Q3BGLG9EQUFNOzs7Ozt3R0FDTkYsaURBQUc7Z0NBQUM0QyxDQUFDLEVBQUMsQ0FBRztnQ0FBQ0gsQ0FBQyxFQUFDLENBQU07Z0NBQUNMLEVBQUUsRUFBQyxDQUFTO2dDQUFDUixLQUFLLEVBQUMsQ0FBTztzSEFDM0NiLGFBQWE7Ozs7Ozs7Ozs7Ozs7Ozs7OztnR0FHakJnRCxTQUFTOzJCQUFLQyxTQUFTOzs7Ozs7Ozs7Ozs7OztBQUc5QixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vemVyb25ldC8uL3BhZ2VzL19hcHAudHN4PzJmYmUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHR5cGUgeyBBcHBQcm9wcyB9IGZyb20gXCJuZXh0L2FwcFwiXG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCJcblxuaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCJcbmltcG9ydCB7IFxuICBDaGFrcmFQcm92aWRlcixcbiAgRHJhd2VyLFxuICBEcmF3ZXJDb250ZW50LFxuICBJbWFnZSxcbiAgQ2VudGVyLFxuICBCb3gsXG4gIEZsZXgsXG4gIFNwYWNlcixcbiAgRGl2aWRlcixcbiAgTGluayxcbiAgVGV4dCxcbiAgdXNlQ29sb3JNb2RlVmFsdWUsXG4gIHVzZURpc2Nsb3N1cmUsXG59IGZyb20gXCJAY2hha3JhLXVpL3JlYWN0XCJcbmltcG9ydCB7IEljb24gfSBmcm9tIFwiQGljb25pZnkvcmVhY3RcIlxuaW1wb3J0IHsgQ29sb3JNb2RlU2NyaXB0IH0gZnJvbSBcIkBjaGFrcmEtdWkvcmVhY3RcIlxuXG5pbXBvcnQgXCIuLi9zdHlsZXMvZ2xvYmFscy5zY3NzXCJcbmltcG9ydCB0aGVtZSBmcm9tIFwiLi4vemVyb25ldC50aGVtZVwiXG5cbmNvbnN0IExpbmtJdGVtcyA9IFtcbiAgeyBuYW1lOiBcItCT0LvQsNCy0L3QsNGPXCIsIGljb246IFwiZmx1ZW50OmhvbWUtMTItZmlsbGVkXCIsIHVybDogXCIvXCIgfSxcbiAgeyBuYW1lOiBcItCf0LDRgdGC0LHQuNC9XCIsIGljb246IFwiZmx1ZW50Om5vdGVib29rLWFkZC0yNC1maWxsZWRcIiwgdXJsOiBcIi8vcGFzdGUuemVyb25ldC5zcGFjZVwiIH0sXG5dO1xuXG5mdW5jdGlvbiBTaW1wbGVTaWRlYmFyKHsgY2hpbGRyZW4gfSkge1xuICBjb25zdCB7IGlzT3Blbiwgb25PcGVuLCBvbkNsb3NlIH0gPSB1c2VEaXNjbG9zdXJlKCk7XG4gIHJldHVybiAoXG4gICAgPEJveD5cbiAgICAgIDxTaWRlYmFyQ29udGVudCBvbkNsb3NlPXsoKSA9PiBvbkNsb3NlfSBkaXNwbGF5PXt7IGJhc2U6IFwibm9uZVwiIH19IC8+XG4gICAgICA8RHJhd2VyXG4gICAgICAgIGF1dG9Gb2N1cz17ZmFsc2V9XG4gICAgICAgIGlzT3Blbj17aXNPcGVufVxuICAgICAgICBwbGFjZW1lbnQ9XCJsZWZ0XCJcbiAgICAgICAgb25DbG9zZT17b25DbG9zZX1cbiAgICAgICAgcmV0dXJuRm9jdXNPbkNsb3NlPXtmYWxzZX1cbiAgICAgICAgb25PdmVybGF5Q2xpY2s9e29uQ2xvc2V9XG4gICAgICAgIHNpemU9XCJmdWxsXCI+XG4gICAgICAgIDxEcmF3ZXJDb250ZW50PlxuICAgICAgICAgIDxTaWRlYmFyQ29udGVudCBvbkNsb3NlPXtvbkNsb3NlfSAvPlxuICAgICAgICA8L0RyYXdlckNvbnRlbnQ+XG4gICAgICA8L0RyYXdlcj5cbiAgICAgIDxJY29uIFxuICAgICAgICBjb2xvcj1cImJsYWNrXCJcbiAgICAgICAgaGVpZ2h0PVwiMjRcIiBcbiAgICAgICAgd2lkdGg9XCIyNFwiIFxuICAgICAgICBpY29uPVwiZXA6bWVudVwiIFxuICAgICAgICBvbkNsaWNrPXtvbk9wZW59IFxuICAgICAgICBjdXJzb3I9XCJwb2ludGVyXCIgXG4gICAgICAgIHN0eWxlPXt7XG4gICAgICAgICAgbWFyZ2luVG9wOiBcIi0xMnB4XCJcbiAgICAgICAgfX1cbiAgICAgIC8+XG4gICAgPC9Cb3g+XG4gICk7XG59XG5cbmNvbnN0IFNpZGViYXJDb250ZW50ID0gKHsgb25DbG9zZSwgLi4ucmVzdCB9KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPEJveFxuICAgICAgYmc9e3VzZUNvbG9yTW9kZVZhbHVlKFwiIzk5OTk5OWI4XCIsXCIjNzM3MzczXCIpfVxuICAgICAgYm9yZGVyUmlnaHQ9XCIxcHhcIlxuICAgICAgYm9yZGVyUmlnaHRDb2xvcj17dXNlQ29sb3JNb2RlVmFsdWUoXCIjOTk5OTk5YjhcIixcIiM3MzczNzNcIil9XG4gICAgICB3PXt7IGJhc2U6IFwiZnVsbFwiIH19XG4gICAgICBwb3M9XCJmaXhlZFwiXG4gICAgICBoPVwiZnVsbFwiXG4gICAgICBzdHlsZT17e1xuICAgICAgICBvdmVyZmxvd1k6IFwic2Nyb2xsXCJcbiAgICAgIH19IFxuICAgICAgey4uLnJlc3R9PlxuICAgICAgPEZsZXg+XG4gICAgICAgIDxCb3ggdz1cIjEwMCVcIj5cbiAgICAgICAgICA8Q2VudGVyIGJnPVwiIzk5OTk5OVwiIGg9XCIyNXB4XCI+XG4gICAgICAgICAgICA8VGV4dCBmb250U2l6ZT1cIm1kXCI+0JzQtdC90Y48L1RleHQ+XG4gICAgICAgICAgPC9DZW50ZXI+XG4gICAgICAgIDwvQm94PlxuICAgICAgICA8U3BhY2VyIC8+XG4gICAgICAgIDxCb3ggcD1cIjNcIiBoPVwiMjVweFwiIGJnPVwiIzk5OTk5OVwiPlxuICAgICAgICAgIDxDZW50ZXIgYmc9XCIjOTk5OTk5XCIgaD1cIjJweFwiPlxuICAgICAgICAgICAgPEljb24gXG4gICAgICAgICAgICAgIGhlaWdodD1cIjIxXCIgXG4gICAgICAgICAgICAgIHdpZHRoPVwiMjFcIiBcbiAgICAgICAgICAgICAgaWNvbj1cImZhOmNsb3NlXCIgXG4gICAgICAgICAgICAgIG9uQ2xpY2s9e29uQ2xvc2V9IFxuICAgICAgICAgICAgICBjdXJzb3I9XCJwb2ludGVyXCJcbiAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICBtYXJnaW5Ub3A6IFwiLTRweFwiXG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvQ2VudGVyPlxuICAgICAgICA8L0JveD5cbiAgICAgIDwvRmxleD5cbiAgICAgIHtMaW5rSXRlbXMubWFwKChsaW5rKSA9PiAoXG4gICAgICAgIDxOYXZJdGVtIGtleT17bGluay5uYW1lfSBpY29uPXtsaW5rLmljb259IHVybD17bGluay51cmx9PlxuICAgICAgICAgIHtsaW5rLm5hbWV9XG4gICAgICAgIDwvTmF2SXRlbT5cbiAgICAgICkpfVxuICAgIDwvQm94PlxuICApO1xufTtcblxuY29uc3QgTmF2SXRlbSA9ICh7IGljb24sIHVybCwgY2hpbGRyZW4sIC4uLnJlc3QgfSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxMaW5rIGZvbnRGYW1pbHk9XCJ2ZXJkYW5hXCIgaHJlZj17dXJsfSBzdHlsZT17eyB0ZXh0RGVjb3JhdGlvbjogXCJub25lXCIgfX0gX2ZvY3VzPXt7IGJveFNoYWRvdzogXCJub25lXCIgfX0+XG4gICAgICA8RmxleFxuICAgICAgICBhbGlnbj1cImNlbnRlclwiIHA9XCIxXCIgcm9sZT1cImdyb3VwXCIgY3Vyc29yPVwicG9pbnRlclwidz1cIjEwMCVcIlxuICAgICAgICBfaG92ZXI9e3tiZzogXCIjNzM3MzczXCIsIGNvbG9yOiBcIndoaXRlXCJ9fSBmb250U2l6ZT1cIjEzcHhcIiB7Li4ucmVzdH0+XG4gICAgICAgIDxUZXh0IHdoaXRlU3BhY2U9XCJub3dyYXBcIiBwYWRkaW5nUmlnaHQ9XCI1cHhcIiB0ZXh0RGVjb3JhdGlvbj1cInVuZGVybGluZVwiPntjaGlsZHJlbn17XCJcXHRcIn08L1RleHQ+XG4gICAgICAgIDxEaXZpZGVyIHZhcmlhbnQ9XCJkYXNoZWRcIiBvcmllbnRhdGlvbj1cImhvcml6b250YWxcIiAvPlxuICAgICAgICB7aWNvbiAmJiAoXG4gICAgICAgICAgPEljb24gaWNvbj17aWNvbn0gaGVpZ2h0PVwiMjRcIiB3aWR0aD1cIjI0XCIgc3R5bGU9e3tcbiAgICAgICAgICAgIG1pbkhlaWdodDogXCIyNHB4XCIsXG4gICAgICAgICAgICBtaW5XaWR0aDogXCIyNHB4XCJcbiAgICAgICAgICB9fSAvPlxuICAgICAgICApfVxuICAgICAgPC9GbGV4PlxuICAgIDwvTGluaz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFplcm9BcHAoeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9OiBBcHBQcm9wcykge1xuICBjb25zdCBbaXNNZW51T3Blbiwgc2V0TWVudV0gPSB1c2VTdGF0ZShmYWxzZSk7XG4gIGNvbnN0IGhhbmRsZU1lbnUgPSAoKSA9PiB7XG4gICAgc2V0TWVudSgocHJldlN0YXRlOiBhbnkpID0+ICFwcmV2U3RhdGUpXG4gIH07XG5cbiAgcmV0dXJuIDw+XG4gICAgPEhlYWQ+XG4gICAgICA8bWV0YSBjaGFyU2V0PVwiVVRGLThcIiAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIHByb3BlcnR5PVwib2c6aW1hZ2VcIiBcbiAgICAgICAgY29udGVudD1cIi9hbmRyb2lkLWNocm9tZS00OHg0OC5wbmdcIiBcbiAgICAgIC8+XG4gICAgICA8bGluayBcbiAgICAgICAgcmVsPVwiYXBwbGUtdG91Y2gtaWNvblwiIFxuICAgICAgICBzaXplcz1cIjE4MHgxODBcIlxuICAgICAgICBocmVmPVwiL2FwcGxlLXRvdWNoLWljb24ucG5nXCIgXG4gICAgICAvPlxuICAgICAgPGxpbmsgXG4gICAgICAgIHJlbD1cImljb25cIiBcbiAgICAgICAgdHlwZT1cImltYWdlL3BuZ1wiIFxuICAgICAgICBzaXplcz1cIjMyeDMyXCIgXG4gICAgICAgIGhyZWY9XCIvZmF2aWNvbi0zMngzMi5wbmdcIiBcbiAgICAgIC8+XG4gICAgICA8bGluayBcbiAgICAgICAgcmVsPVwiaWNvblwiIFxuICAgICAgICB0eXBlPVwiaW1hZ2UvcG5nXCIgXG4gICAgICAgIHNpemVzPVwiMTZ4MTZcIiBcbiAgICAgICAgaHJlZj1cIi9mYXZpY29uLTE2eDE2LnBuZ1wiIFxuICAgICAgLz5cbiAgICAgIDxsaW5rIFxuICAgICAgICByZWw9XCJtYW5pZmVzdFwiIFxuICAgICAgICBocmVmPVwiL21hbmlmZXN0Lmpzb25cIiBcbiAgICAgIC8+XG4gICAgICA8bGluayBcbiAgICAgICAgcmVsPVwibWFzay1pY29uXCIgXG4gICAgICAgIGhyZWY9XCIvc2FmYXJpLXBpbm5lZC10YWIuc3ZnXCIgXG4gICAgICAgIGNvbG9yPVwiIzViYmFkNVwiIFxuICAgICAgLz5cbiAgICAgIDxtZXRhIFxuICAgICAgICBwcm9wZXJ0eT1cInR3aXR0ZXI6Y2FyZFwiIFxuICAgICAgICBjb250ZW50PVwic3VtbWFyeVwiIFxuICAgICAgLz5cbiAgICAgIDxtZXRhIFxuICAgICAgICBwcm9wZXJ0eT1cInR3aXR0ZXI6aW1hZ2VcIiBcbiAgICAgICAgY29udGVudD1cIi9hbmRyb2lkLWNocm9tZS00OHg0OC5wbmdcIiBcbiAgICAgIC8+XG4gICAgICA8bWV0YSBcbiAgICAgICAgbmFtZT1cIm1zYXBwbGljYXRpb24tVGlsZUNvbG9yXCIgXG4gICAgICAgIGNvbnRlbnQ9XCIjNjAzY2JhXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJtc2FwcGxpY2F0aW9uLVRpbGVJbWFnZVwiIFxuICAgICAgICBjb250ZW50PVwiL21zdGlsZS0xNDR4MTQ0LnBuZ1wiIFxuICAgICAgLz5cbiAgICAgIDxtZXRhIFxuICAgICAgICBuYW1lPVwidGhlbWUtY29sb3JcIiBcbiAgICAgICAgY29udGVudD1cIiMyMjIyMzNcIiBcbiAgICAgIC8+XG4gICAgICA8bWV0YSBcbiAgICAgICAgaHR0cEVxdWl2PVwiWC1VQS1Db21wYXRpYmxlXCIgXG4gICAgICAgIGNvbnRlbnQ9XCJJRT1FZGdlXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIGh0dHBFcXVpdj1cIkNvbnRlbnQtVHlwZVwiIFxuICAgICAgICBjb250ZW50PVwidGV4dC9odG1sLCBjaGFyc2V0PVVURi04XCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJyZWZlcnJlclwiIFxuICAgICAgICBjb250ZW50PVwic3RyaWN0LW9yaWdpbi13aGVuLWNyb3NzLW9yaWdpblwiIFxuICAgICAgLz5cbiAgICAgIDxtZXRhIFxuICAgICAgICBuYW1lPVwidmlld3BvcnRcIiBcbiAgICAgICAgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJnb29nbGVcIiBcbiAgICAgICAgY29udGVudD1cIm5vdHJhbnNsYXRlXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJhcHBsZS1tb2JpbGUtd2ViLWFwcC1jYXBhYmxlXCIgXG4gICAgICAgIGNvbnRlbnQ9XCJ5ZXNcIiBcbiAgICAgIC8+XG4gICAgICA8bWV0YSBcbiAgICAgICAgbmFtZT1cImFwcGxlLW1vYmlsZS13ZWItYXBwLXN0YXR1cy1iYXItc3R5bGVcIiBcbiAgICAgICAgY29udGVudD1cImRlZmF1bHRcIiBcbiAgICAgIC8+XG4gICAgICA8bWV0YSBcbiAgICAgICAgbmFtZT1cImZvcm1hdC1kZXRlY3Rpb25cIiBcbiAgICAgICAgY29udGVudD1cInRlbGVwaG9uZT1ub1wiIFxuICAgICAgLz5cbiAgICAgIDxtZXRhIFxuICAgICAgICBuYW1lPVwibW9iaWxlLXdlYi1hcHAtY2FwYWJsZVwiIFxuICAgICAgICBjb250ZW50PVwieWVzXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJtc2FwcGxpY2F0aW9uLWNvbmZpZ1wiIFxuICAgICAgICBjb250ZW50PVwiL2Jyb3dzZXJjb25maWcueG1sXCIgXG4gICAgICAvPlxuICAgICAgPG1ldGEgXG4gICAgICAgIG5hbWU9XCJtc2FwcGxpY2F0aW9uLXRhcC1oaWdobGlnaHRcIiBcbiAgICAgICAgY29udGVudD1cIm5vXCIgXG4gICAgICAvPlxuICAgIDwvSGVhZD5cbiAgICA8Q2hha3JhUHJvdmlkZXIgdGhlbWU9e3RoZW1lfT5cbiAgICAgIDxDb2xvck1vZGVTY3JpcHQgaW5pdGlhbENvbG9yTW9kZT17dGhlbWUuY29uZmlnLmluaXRpYWxDb2xvck1vZGV9IC8+XG4gICAgICA8RmxleD5cbiAgICAgICAgPEJveCB3PVwiMTAwJVwiPlxuICAgICAgICAgIDxMaW5rIG91dGxpbmU9XCJub25lXCIgaHJlZj1cIi9cIiBwb3NpdGlvbj1cImFic29sdXRlXCIgZm9udFNpemU9XCJtZFwiIGJnQ29sb3I9XCIjNzU3NTc1XCIgaD1cIjI1cHhcIiB3PVwiMjVweFwiPlxuICAgICAgICAgICAgPEltYWdlIFxuICAgICAgICAgICAgICBzcmM9XCIvYW5kcm9pZC1jaHJvbWUtMzZ4MzYucG5nXCIgXG4gICAgICAgICAgICAgIGg9XCIxNnB4XCIgXG4gICAgICAgICAgICAgIHc9XCIxNnB4XCIgXG4gICAgICAgICAgICAgIG10PVwiNHB4XCJcbiAgICAgICAgICAgICAgbWw9XCI0cHhcIiBcbiAgICAgICAgICAgICAgYWx0PVwiemVyb25ldCBsb2dvXCJcbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgIDxDZW50ZXIgYmc9XCIjOTk5OTk5XCIgaD1cIjI1cHhcIj5cbiAgICAgICAgICAgIDxUZXh0IGZvbnRTaXplPVwibWRcIiBtcj1cIi00OHB4XCI+0JHQu9C+0LMg0JDQudC+0LrRgdCwPC9UZXh0PlxuICAgICAgICAgIDwvQ2VudGVyPlxuICAgICAgICA8L0JveD5cbiAgICAgICAgPFNwYWNlciAvPlxuICAgICAgICA8Qm94IHA9XCIzXCIgaD1cIjI1cHhcIiBiZz1cIiM5OTk5OTlcIiBjb2xvcj1cIndoaXRlXCI+XG4gICAgICAgICAgPFNpbXBsZVNpZGViYXI+PD48Lz48L1NpbXBsZVNpZGViYXI+XG4gICAgICAgIDwvQm94PlxuICAgICAgPC9GbGV4PlxuICAgICAgPENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPlxuICAgIDwvQ2hha3JhUHJvdmlkZXI+XG4gIDwvPlxufSJdLCJuYW1lcyI6WyJIZWFkIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIkNoYWtyYVByb3ZpZGVyIiwiRHJhd2VyIiwiRHJhd2VyQ29udGVudCIsIkltYWdlIiwiQ2VudGVyIiwiQm94IiwiRmxleCIsIlNwYWNlciIsIkRpdmlkZXIiLCJMaW5rIiwiVGV4dCIsInVzZUNvbG9yTW9kZVZhbHVlIiwidXNlRGlzY2xvc3VyZSIsIkljb24iLCJDb2xvck1vZGVTY3JpcHQiLCJ0aGVtZSIsIkxpbmtJdGVtcyIsIm5hbWUiLCJpY29uIiwidXJsIiwiU2ltcGxlU2lkZWJhciIsImNoaWxkcmVuIiwiaXNPcGVuIiwib25PcGVuIiwib25DbG9zZSIsIlNpZGViYXJDb250ZW50IiwiZGlzcGxheSIsImJhc2UiLCJhdXRvRm9jdXMiLCJwbGFjZW1lbnQiLCJyZXR1cm5Gb2N1c09uQ2xvc2UiLCJvbk92ZXJsYXlDbGljayIsInNpemUiLCJjb2xvciIsImhlaWdodCIsIndpZHRoIiwib25DbGljayIsImN1cnNvciIsInN0eWxlIiwibWFyZ2luVG9wIiwicmVzdCIsImJnIiwiYm9yZGVyUmlnaHQiLCJib3JkZXJSaWdodENvbG9yIiwidyIsInBvcyIsImgiLCJvdmVyZmxvd1kiLCJmb250U2l6ZSIsInAiLCJtYXAiLCJsaW5rIiwiTmF2SXRlbSIsImZvbnRGYW1pbHkiLCJocmVmIiwidGV4dERlY29yYXRpb24iLCJfZm9jdXMiLCJib3hTaGFkb3ciLCJhbGlnbiIsInJvbGUiLCJfaG92ZXIiLCJ3aGl0ZVNwYWNlIiwicGFkZGluZ1JpZ2h0IiwidmFyaWFudCIsIm9yaWVudGF0aW9uIiwibWluSGVpZ2h0IiwibWluV2lkdGgiLCJaZXJvQXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwiaXNNZW51T3BlbiIsInNldE1lbnUiLCJoYW5kbGVNZW51IiwicHJldlN0YXRlIiwibWV0YSIsImNoYXJTZXQiLCJwcm9wZXJ0eSIsImNvbnRlbnQiLCJyZWwiLCJzaXplcyIsInR5cGUiLCJodHRwRXF1aXYiLCJpbml0aWFsQ29sb3JNb2RlIiwiY29uZmlnIiwib3V0bGluZSIsInBvc2l0aW9uIiwiYmdDb2xvciIsInNyYyIsIm10IiwibWwiLCJhbHQiLCJtciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
 
 /***/ }),
 
-/***/ 904:
+/***/ "./zeronet.theme.ts":
+/*!**************************!*\
+  !*** ./zeronet.theme.ts ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/theme-tools */ \"@chakra-ui/theme-tools\");\n/* harmony import */ var _chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__);\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.extendTheme)({\n    colors: {\n        black: '#999'\n    },\n    components: {\n        Component: {\n            baseStyle: {\n                backgroundColor: '#999999b8'\n            }\n        }\n    },\n    styles: {\n        global: (props)=>({\n                body: {\n                    bg: (0,_chakra_ui_theme_tools__WEBPACK_IMPORTED_MODULE_1__.mode)('#999999b8', '#737373')(props)\n                }\n            })\n    },\n    useSystemColorMode: true\n}));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi96ZXJvbmV0LnRoZW1lLnRzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQThDO0FBQ21CO0FBR2pFLGlFQUFlQSw2REFBVyxDQUFDLENBQUM7SUFDMUJFLE1BQU0sRUFBRSxDQUFDO1FBQ1BDLEtBQUssRUFBRSxDQUFNO0lBQ2YsQ0FBQztJQUNEQyxVQUFVLEVBQUUsQ0FBQztRQUNYQyxTQUFTLEVBQUUsQ0FBQztZQUNWQyxTQUFTLEVBQUUsQ0FBQztnQkFDVkMsZUFBZSxFQUFFLENBQVc7WUFDOUIsQ0FBQztRQUNILENBQUM7SUFDSCxDQUFDO0lBQ0RDLE1BQU0sRUFBRSxDQUFDO1FBQ1BDLE1BQU0sR0FBR0MsS0FBcUMsSUFBTSxDQUFDO2dCQUNuREMsSUFBSSxFQUFFLENBQUM7b0JBQ0xDLEVBQUUsRUFBRVgsNERBQUksQ0FBQyxDQUFXLFlBQUMsQ0FBUyxVQUFFUyxLQUFLO2dCQUN2QyxDQUFDO1lBQ0gsQ0FBQztJQUNILENBQUM7SUFDREcsa0JBQWtCLEVBQUUsSUFBSTtBQUMxQixDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly96ZXJvbmV0Ly4vemVyb25ldC50aGVtZS50cz9hYjExIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV4dGVuZFRoZW1lIH0gZnJvbSAnQGNoYWtyYS11aS9yZWFjdCdcbmltcG9ydCB7IG1vZGUsIFN0eWxlRnVuY3Rpb25Qcm9wcyB9IGZyb20gJ0BjaGFrcmEtdWkvdGhlbWUtdG9vbHMnXG5pbXBvcnQgeyBEaWN0IH0gZnJvbSAnQGNoYWtyYS11aS91dGlscydcblxuZXhwb3J0IGRlZmF1bHQgZXh0ZW5kVGhlbWUoe1xuICBjb2xvcnM6IHtcbiAgICBibGFjazogJyM5OTknXG4gIH0sXG4gIGNvbXBvbmVudHM6IHtcbiAgICBDb21wb25lbnQ6IHtcbiAgICAgIGJhc2VTdHlsZToge1xuICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICcjOTk5OTk5YjgnXG4gICAgICB9LFxuICAgIH1cbiAgfSxcbiAgc3R5bGVzOiB7XG4gICAgZ2xvYmFsOiAocHJvcHM6IERpY3Q8YW55PiB8IFN0eWxlRnVuY3Rpb25Qcm9wcykgPT4gKHtcbiAgICAgIGJvZHk6IHtcbiAgICAgICAgYmc6IG1vZGUoJyM5OTk5OTliOCcsJyM3MzczNzMnKShwcm9wcyksXG4gICAgICB9XG4gICAgfSlcbiAgfSxcbiAgdXNlU3lzdGVtQ29sb3JNb2RlOiB0cnVlLFxufSkiXSwibmFtZXMiOlsiZXh0ZW5kVGhlbWUiLCJtb2RlIiwiY29sb3JzIiwiYmxhY2siLCJjb21wb25lbnRzIiwiQ29tcG9uZW50IiwiYmFzZVN0eWxlIiwiYmFja2dyb3VuZENvbG9yIiwic3R5bGVzIiwiZ2xvYmFsIiwicHJvcHMiLCJib2R5IiwiYmciLCJ1c2VTeXN0ZW1Db2xvck1vZGUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./zeronet.theme.ts\n");
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ zeronet_theme)
-});
+/***/ }),
 
-// EXTERNAL MODULE: external "@chakra-ui/react"
-var react_ = __webpack_require__(930);
-;// CONCATENATED MODULE: external "@chakra-ui/theme-tools"
-const theme_tools_namespaceObject = require("@chakra-ui/theme-tools");
-;// CONCATENATED MODULE: ./zeronet.theme.ts
+/***/ "./styles/globals.scss":
+/*!*****************************!*\
+  !*** ./styles/globals.scss ***!
+  \*****************************/
+/***/ (() => {
 
-
-/* harmony default export */ const zeronet_theme = ((0,react_.extendTheme)({
-    colors: {
-        black: '#999'
-    },
-    components: {
-        Component: {
-            baseStyle: {
-                backgroundColor: '#999999b8'
-            }
-        }
-    },
-    styles: {
-        global: (props)=>({
-                body: {
-                    bg: (0,theme_tools_namespaceObject.mode)('#999999b8', '#737373')(props)
-                }
-            })
-    },
-    useSystemColorMode: true
-}));
 
 
 /***/ }),
 
-/***/ 930:
+/***/ "@chakra-ui/react":
+/*!***********************************!*\
+  !*** external "@chakra-ui/react" ***!
+  \***********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("@chakra-ui/react");
 
 /***/ }),
 
-/***/ 968:
+/***/ "@chakra-ui/theme-tools":
+/*!*****************************************!*\
+  !*** external "@chakra-ui/theme-tools" ***!
+  \*****************************************/
 /***/ ((module) => {
 
+"use strict";
+module.exports = require("@chakra-ui/theme-tools");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
 module.exports = require("next/head");
 
 /***/ }),
 
-/***/ 689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+"use strict";
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ 566:
+/***/ "@iconify/react":
+/*!*********************************!*\
+  !*** external "@iconify/react" ***!
+  \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = import("@iconify/react");;
 
 /***/ })
@@ -448,7 +117,7 @@ module.exports = import("@iconify/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(847));
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.tsx"));
 module.exports = __webpack_exports__;
 
 })();
