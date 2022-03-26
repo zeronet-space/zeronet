@@ -64,8 +64,8 @@ export default function Home({ posts, build_id }) {
       }}>
         <Box w='100%' bgColor='#898989' p='1px' pl='5px'>
           <Text>
-            Авторское право &copy; 2021-{new Date().getFullYear()}. Нихуя не защищено :KekW <br></br>
-            Идентификатор сборки <br>#{build_id}</br>
+            Авторское право &copy; 2021-{new Date().getFullYear()}. Нихуя не защищено :KekW <br />
+            Идентификатор сборки <b>#{build_id}</b>
           </Text>
         </Box>
       </Box>
@@ -84,7 +84,7 @@ export async function getServerSideProps() {
         createdAt: stat.ctime.toLocaleString("ru-RU"), 
         modifiedAt: stat.mtime.toLocaleString("ru-RU"), 
       },
-      data: document,
+      data: document, // тест на негра
     };
   });
   let build_id = spawnSync('git', ['rev-parse', 'HEAD']).stdout.toString().slice(0, 8);
