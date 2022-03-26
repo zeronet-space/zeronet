@@ -22,12 +22,10 @@ function PageSubTitle({ title  }) {
         w: "100%",
         bgColor: "#989898",
         p: "1",
-        h: "20px",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Center, {
             h: "25px",
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {
                 fontSize: "xs",
-                mt: "-10px",
                 children: title
             })
         })
