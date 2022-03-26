@@ -6,9 +6,9 @@ import {
 
 export default function PageSubTitle({ title }) {
   return (
-    <Box w='100%' bgColor='#989898' p='1' h='20px'>
+    <Box w='100%' bgColor='#989898' p='1'>
       <Center h='25px'>
-        <Text fontSize='xs' mt='-10px'>{title}</Text>
+        <Text fontSize='xs'>{title}</Text>
       </Center>
     </Box>
   )
